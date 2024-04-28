@@ -1,0 +1,137 @@
+<!DOCTYPE hml> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",
+          initial-scale=1.0>
+    <title>Document</title>
+    <link rel="stylesheet" type= "text/css" href="Basile-Style.css"/>
+</head>
+<body class="homepage-body">
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="map.html">Map</a> 
+        </div>
+    </nav>
+    <section class="slideshow-section">
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+              <div class="slide-image">
+                  <img src="Images/800px-Von_Bayros_Pentamerone_04.svg">
+              </div>
+              <div class="slide-text">Life and death of one of the most underrated writers in Italian history.</div>
+          </div>
+        
+          <div class="mySlides fade">
+              <div class="slide-image">
+                  <img src="Images/Unknown_artist_-_Giambattista_Basile__1566-1632__Neapolitan_poet_broker_and_fairy_tale_collector_-__.svg">
+              </div>
+              <div class="slide-text">"Lo cunto de li cunti": a forgotten masterpiece.</div>
+          </div>
+        
+          <div class="mySlides fade">
+              <div class="slide-image">
+                  <img src="Images/Italy_map_1584.svg">
+              </div>
+              <div class="slide-text">The settings and cultural references: a journey in a fabulous past.</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+        
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </section>
+  <section class="hero">
+      <div class="hero-container">
+          <div class="column-left">
+              <h1>Welcome to Basile online!</h1>
+              <p>Since the beginning of time, fables have been a staple part of everybody's life.</p>
+                <p>They are the way we learn how to act, how to conduct ourselves and how to avoid
+                the many dangers that we could encounter during our life's journey.</p>
+                <p>Giambattista Basile has been the first to codified many of our beloved stories (like Cinderella,
+                Cat in Boots and Snow White). During the centuries though, this incredible stories have been 
+                either denautared or completely forgotten, and many of the core characteristics of these 
+                immortal characters have become completely unrecognized.</p>
+                <p>With the complicitness of the great prejudices the critics have always had with dialectal traditions,
+                Basile's works have slowly faded in the background of history.</p>
+                <p>The time has come to recuperate them!</p>
+                <p>How did a man like Basile see the world? And how did he structure this world?</p> 
+                <p>Let's find out!</p>
+              </p>
+          </div>
+          <div class="column-right">
+            <img src="Images/Il_mercante.webp">
+        </div>
+      </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            </section>
+    </section>
+    <style>
+      .slideshow-container {
+          position: relative;
+      }
+      .slide-content {
+    position: relative;
+    height: 100%; /* Ensure the slide content fills the container */
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    object-position: top; /* Position image at the top */
+}
+      .slide-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+          color: white;
+          padding: 10px;
+          text-align: center;
+      }
+  </style>
+    <footer>
+      <!-- Footer content goes here -->
+  </footer>
+</body>
+  </html>
