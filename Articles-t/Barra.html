@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-barra">
+            <h1>Barra</h1>
+            <h2>Third Day, Belluccia</h2>
+            <p>Baiae (Italian: Baia; Neapolitan: Baia) was an ancient Roman town situated on the northwest shore of the Gulf of Naples and now in the comune of Bacoli. It was a fashionable resort for centuries in antiquity, particularly towards the end of the Roman Republic, when it was reckoned as superior to Capri, Pompeii, and Herculaneum by wealthy Romans, who built villas here from 100 BC.[1] Ancient authors attest that many emperors built in Baia, almost in competition with their predecessors[2] and they and their courts often stayed there. It was notorious for its hedonistic offerings and the attendant rumours of corruption and scandal.
+
+                The lower part of the town later became submerged in the sea due to local volcanic, bradyseismic activity which raised or lowered the land. Recent underwater archaeology has revealed many of the fine buildings now protected in the submerged archaeological park.[3]
+                
+                Many impressive buildings from the upper town can be seen in the Parco Archeologico delle Terme di Baia.
+                
+                The views and architecture of Baiae were so memorable that they inspired scenes to be depicted on ancient glass flasks made for visitors (probably in Puteoli in the late 3rd to early 4th century AD) many of which have been found scattered throughout the empire, and today kept in many museums[4] notably in Populonia,[5] Empúries and Warsaw. The one in Warsaw in particular seems to give a complete picture of that gradually becoming clear today as a result of research in the submerged archaeological area.[6]                
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-barra': '../Article_Images/Barra.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

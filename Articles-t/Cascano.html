@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-cascano">
+            <h1>Cascano</h1>
+            <h2>First Day, Peruonto (Grotta del Cane)</h2>
+            <p>Cascano è una frazione del comune di Sessa Aurunca e di Carinola in (Provincia di Caserta), distante dal comune circa 4,5 km.
+                l borgo, d'origine romana come evidenzia il toponimo[senza fonte], è un centro noto soprattutto per l'artigianato della ceramica, la cui lavorazione è documentata[senza fonte] nel sito almeno dal IV secolo d.C. A conferma della sua vocazione artistica e artigianale a Cascano è presente il Liceo Artistico (scuola superiore, ex Istituto d'Arte), che negli anni molto lustro sta offrendo all'intero territorio grazie agli artisti che ha formato.
+
+Punti di riferimento del paese sono la piazza Roma e la piazza Gen. Martino. La frazione attraversata dalla S.S.7 Appia, collega il paese ai principali centri vicini Sessa Aurunca, Roccamonfina, Carinola, oltre che rendere facilmente raggiungibile il paese da altre località. Nel piccolo borgo ci sono 3 campi sportivi, diverse attività commerciali tra cui pizzerie e bar.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-cascano': '../Article_Images/Cascano.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-anfiteatro">
+            <h1>Amphiteatre of Capua</h1>
+            <h2>Fifth Day, The Five Sons</h2>
+            <p>The Amphitheatre of Capua was a Roman amphitheatre in the city of Capua (modern Santa Maria Capua Vetere), second only to the Colosseum in size and probably the model for it.[1] It may have been the first amphitheatre to be built by the Romans.[2] and was the location of the first and most famous gladiator school.
+
+                Today, its remains are found in the comune of Santa Maria Capua Vetere, on Piazza I Ottobre. Much of the stone from the amphitheatre was reused by the Capuans in the Norman period to build the Castello delle Pietre. Some of the ornamental busts that were originally used as keystones for the arches of the amphitheatre are found today in the façade of the Palazzo del comune of Capua. Since December 2014, the museum, amphitheatre, and mithraeum have been under the control of the state museum of Campania.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-anfiteatro': '../Article_Images/Anfiteatro.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

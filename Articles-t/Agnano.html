@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-agnano">
+            <h1>Agnano</h1>
+            <h2>First Day, Peruonto (Grotta del Cane)</h2>
+            <p>Agnano is a suburb of Napoli, Italy, situated southwest of the city in the Campi Flegrei region. It was popular among both ancient Greeks and Romans and was famed for its hot sulphurous springs.
+                Lake Agnano formed in the Middle Ages in the volcanic crater but was drained in 1870 to increase arable land and reduce the habitat of the Anopheles mosquito, which carries the malaria parasite. The crater is now home to the Agnano hippodrome and the town.
+
+After World War II, Agnano was home to the U.S. Naval Support Activity consisting of the U.S. Naval Hospital, administrative offices, barracks, and two Department of Defense Education Activity schools: Naples Elementary School and Naples American High School.
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-agnano': '../Article_Images/Agnano.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

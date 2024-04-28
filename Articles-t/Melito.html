@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-melito">
+            <h1>Melito</h1>
+            <h2>Second Day, Gagliuso</h2>
+            <p>Melito di Napoli is a comune (municipality) in the Metropolitan City of Naples in the Italian region Campania, located about 9 kilometres (5.6 mi) north of Naples.
+
+                Melito di Napoli borders the following municipalities: Casandrino, Giugliano in Campania, Mugnano di Napoli, Naples, Sant'Antimo.
+                According to historical documents, the origin of Melito is to be traced back to the emperor Frederick II, who declared Melito Casale di Napoli (Hamlet of Naples). It came to be known as  Casale di Napoli  up until 1800. Originally it was a small rural village in the north of the city; it was founded without bastions or fortresses, which leads us to infer the village was located in an essentially peaceful territory.
+
+                Another Historian derives the name Melito from Mellito which in Latin meant deep trench. At the time of the Duchy of Naples there used to be a border that limited the boundary between Naples and Capua and Melito was one of villages included, among other rural territories.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-melito': '../Article_Images/Melito.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

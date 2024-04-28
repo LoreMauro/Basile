@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-monteleone">
+            <h1>Monteleone Castle</h1>
+            <h2>First Day, Vardiello</h2>
+            <p>Il castello di Monteleone è un castello medievale, della frazione di Monteleone, nel comune di Marano di Napoli
+                Prende il nome del feudo posseduto dalla casata Pignatelli proprietaria dell'edificio a partire dal XVI secolo; fu edificato dall'imperatore Federico II di Svevia. Alla presumibile datazione tra il 1227 e il 1230,[3] si contrappongono ipotesi che lo vogliono costruito dopo il 1235.[2] Andato in gran parte distrutto negli anni successivi venne riedificato tra il 1275 e il 1278 su iniziativa di Carlo I d'Angiò. I lavori furono condotti dagli architetti francesi Pierre de Chaule, progettista del più famoso Maschio Angioino di Napoli, e successivamente da Baucelin de Linais.[2]
+
+L'edificio ebbe originariamente usi residenziali, presumibilmente connessi con la circostante area boschiva (detta Gualdo di Napoli) e con la fruizione dell'area termale flegrea; nei secoli successivi è stato ed è tuttora adibito a svariati usi, che ne determinarono i molti rimaneggiamenti. Della struttura storica è leggibile la pianta rettangolare sveva, che si apre su un grande cortile centrale, e le torri sopraelevate in epoca angioina. Della stessa epoca si conservano alcune finestre gotiche del piano sopraelevato. Il portale attuale, ad arco ribassato, fu realizzato nel periodo aragonese. Il castello era ubicato in un punto strategico ai confini tra il ducato bizantino di Napoli e il principato longobardo di Benevento e Capua.[2]
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-monteleone': '../Article_Images/Monteleone.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-casaluce">
+            <h1>Casaluce (Aprano)</h1>
+            <h2>First Day, Vardiello</h2>
+            <p>Casaluce (Homelight in English, Domus Lux in Latin) is a comune (municipality) in the Province of Caserta in the Italian region Campania, located about 20 kilometres (12 mi) north of Naples and about 13 kilometres (8 mi) southwest of Caserta.
+
+                Casaluce borders the following municipalities: Aversa, Frignano, San Tammaro, Santa Maria Capua Vetere, Teverola.
+                Most likely Casaluce originated on the ruins of late Roman imperial ruins, a village being mentioned in the Cronaca Volturnese of 964 AD. In the early 11th century the first Normans immigrants had a base here. A castle was built by them in the place, in 1030 by Robert Guiscard,[3] or 1060, by Rainulf Drengot, depending from the sources.[4] The castle was destroyed by Roger II of Sicily after his victory against Drengot's successor, Richard II of Aversa. Roger later allowed a reconstruction of the structure, which was used as a military and tax-collection outpost under the Hohenstaufen dynasty, as a fief of the Casaluccia family. Later it was a possession of the del Balzo.
+
+                In 1360 the Celestine monks acquired the castle, adding a Gothic church annexed to it which became a centre of veneration of an image of the Virgin.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-casaluce': '../Article_Images/Casaluce.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

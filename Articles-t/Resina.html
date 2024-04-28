@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-resina">
+            <h1>Resina</h1>
+            <h2>Second Day, The Compare</h2>
+            <h2>Third Day, Belluccia</h2>
+            <p>AErcolano (Italian: [erkoˈlaːno]) is a town and comune in the Metropolitan City of Naples, Campania of Southern Italy. It lies at the western foot of Mount Vesuvius, on the Bay of Naples, just southeast of the city of Naples. The medieval town of Resina (IPA: [reˈziːna]) was built on the volcanic material left by the eruption of Vesuvius (79 AD) that destroyed the ancient city of Herculaneum, from which the present name is derived. Ercolano is a resort and the starting point for excursions to the excavations of Herculaneum and for the ascent of Vesuvius by bus. The town also manufactures leather goods, buttons, glass, and Lacryma Christi (Tears of Christ) wine.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-resina': '../Article_Images/Resina.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

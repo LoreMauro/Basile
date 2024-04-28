@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-marcianise">
+            <h1>Marcianise</h1>
+            <h2>Third Day, The Three Fairies</h2>
+            <p>Marcianise is a town and comune in the province of Caserta, Campania, southern Italy.
+                In the area of the commune of Marcianise numerous tombs of Etruscan and Roman age have been excavated, although Oscan elements should have pre-existed. The origin of the today's city are uncertain. It was allegedly founded in the 6th century CE by bands of Ostrogoths after their defeat in the Gothic War.
+
+                In 861 it was probably destroyed by the Saracens along with Capua. After the creation of the Duchy of Capua, Marcianise followed the latter's history.
+                
+                The area was repeatedly struck by cholera but, according to a legend, the city was miraculously spared by the July 1706 plague through the intercession of the Holy Crucifix. Later the marshy area was dried, and extensive cultivation of cannabis augmented the economy of the region.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-marcianise': '../Article_Images/Marcianise.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
