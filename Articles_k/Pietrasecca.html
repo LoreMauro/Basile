@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-pietrasecca">
+            <h1>Pietrasecca</h1>
+            <h2>Third Day, The Beauty without Hands</h2>
+            <p>Nel luogo si trovava con ogni probabilità un centro fortificato degli Equi, mentre la presenza romana è testimoniata da frammenti ceramici e da un'iscrizione funeraria.
+
+                Secondo la tradizione locale la fondazione dell'attuale abitato si deve al Re Pipino che non distante dall'abitato contemporaneo avrebbe fondato il castello di Luppa[5] dove sarebbe morto nell'810 per essere sepolto in località Fosso Feca. Pietrasecca venne espugnata, insieme a Saracinesco, dai saraceni in ritirata sulla via Valeria e successivamente riconquistata dalle truppe papali. Si apprezzano ancora i resti delle opere fortilizie erette nei secoli sia con tecniche occidentali che orientali. La struttura della cittadella interna presenta una poderosa muraglia di cui, dopo i terremoti occorsi nei secoli, si conservano le tracce che sono ben visibili. L'imponente rocca originaria è osservabile soprattutto dal lato nord-ovest, in prossimità dell'odierno cimitero.
+                
+                Da questa angolazione si può infatti osservare la maggior parte delle opere fortilizie superstiti. La località fu fortificata fin da epoca remota, già prima della dominanza equa, per la sua posizione strategica. Posizione che conservò in epoca romana sulla direttrice della via consolare Valeria e rafforzò in epoca medioevale per essere al confine tra i ducati longobardi di Spoleto e quelli di Benevento. I resti del castello hanno caratteristiche costruttive simili a quelle di altre strutture difensive del territorio della Marsica e della confinante Sabina, costruite tra la fine del X e gli inizi dell'XI secolo, ma recano in sé anche opere murarie arabe oltre che occidentali medievali.
+                
+                Il toponimo "Petram Siccam" è citato per la prima volta in un documento del 1074. Nel XV secolo passò dal dominio degli Orsini, conti di Tagliacozzo, alla baronia di Collalto Sabino e alla fine dello stesso secolo ai signori Savelli. Nel 1655 è documentata l'autonomia amministrativa con la presenza dell'universitas di Pietrasecca. Uno spaccato dell'economia e della vita sociale dell'epoca è documentata nel Catasto del 1749, mentre gli ultimi feudatari furono i Coletti, nobile famiglia abruzzese, già signori di Poggio Cinolfo, Tufo e Val de' Varri prima dell'eversione feudale[6].</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-pietrasecca': '../Article_Images/Pietrasecca.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

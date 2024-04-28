@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-tiber">
+            <h1>Tiber River</h1>
+            <h2>Second Day, Il compare </h2>
+            <p>The Tiber (/ˈtaɪbər/ TY-bər; Italian: Tevere [ˈteːvere];[1] Latin: Tiberis[2]) is the third-longest river in Italy and the longest in Central Italy, rising in the Apennine Mountains in Emilia-Romagna and flowing 406 km (252 mi) through Tuscany, Umbria, and Lazio, where it is joined by the River Aniene, to the Tyrrhenian Sea, between Ostia and Fiumicino.[3] It drains a basin estimated at 17,375 km2 (6,709 sq mi). The river has achieved lasting fame as the main watercourse of the city of Rome, which was founded on its eastern banks.
+
+                The river rises at Mount Fumaiolo in Central Italy and flows in a generally southerly direction past Perugia and Rome to meet the sea at Ostia. Known in ancient times as Flavus (Latin for 'the Blond'), in reference to the yellowish colour of its water, the Tiber has advanced significantly at its mouth, by about 3 km (2 mi), since Roman times, leaving the ancient port of Ostia Antica 6 kilometres (4 miles) inland.[4][5] However, it does not form a proportional delta, owing to a strong north-flowing sea current close to the shore, due to the steep shelving of the coast, and to slow tectonic subsidence.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-tiber': '../Article_Images/Tiber.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

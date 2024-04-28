@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-taranto">
+            <h1>Taranto</h1>
+            <h2>First Day, The Beauty without Hands </h2>
+            <p>Taranto (Italian pronunciation: [ˈtaːranto] ⓘ; Tarantino: Tarde)[a] is a coastal city in Apulia, Southern Italy. It is the capital of the province of Taranto, serving as an important commercial port as well as the main Italian naval base.[5]
+
+                Founded by Spartans in the 8th century BC during the period of Greek colonisation, Taranto was among the most important poleis in Magna Graecia, becoming a cultural, economic and military power that gave birth to philosophers, strategists, writers and athletes such as Archytas, Aristoxenus, Livius Andronicus, Heracleides, Iccus, Cleinias, Leonidas, Lysis and Sosibius. By 500 BC, the city was among the largest in the world, with a population estimated up to 300,000 people.[6][7] The seven-year rule of Archytas marked the apex of its development and recognition of its hegemony over other Greek colonies of southern Italy.
+                
+                During the Norman period, it became the capital of the Principality of Taranto, which covered almost all of the heel of Apulia.
+                
+                Taranto is now the third-largest continental city in southern Italy (south of Rome, roughly the southern half of the Italian peninsula), with well-developed steel and iron foundries, oil refineries, chemical works, naval shipyards and food-processing factories. Taranto will host the 2026 Mediterranean Games.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-taranto': '../Article_Images/Taranto.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

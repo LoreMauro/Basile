@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-bisignano">
+            <h1>Bisignano</h1>
+            <h2>First Day, Peruonto</h2>
+            <p>Bisignano (Calabrian: Visignànu) is a town and comune in the province of Cosenza, part of the Calabria region of southern Italy. It is situated on hills in the Crati valley, between the Pollino and Sila National Parks.[3] The town has historically been settled and inhabited by an Arbëreshë community. In 1467, the daughter of the Albanian leader Skanderbeg, who was the wife of the Prince of Bisignano, invited many Albanian families to this region, and they established various colonies, where they spoke their own language and used the Greek Rite.[7] Skanderbeg had previously helped King Ferdinand I of Naples to end a French-supported insurrection and had been rewarded with the grant of land in Apulia. An alternative version maintains that it was Skanderbeg's niece Irene Castriota, Duchess of San Pietro di Galatina and wife of Pietro Antonio Sanseverino, Prince of Bisignano, who invited Albanians to settle in the area. This was one of the origins of Calabria's Italo-Albanian Arbëreshë community.[8][9]
+
+                Luca Antonio Pirozzo, better known as St. Humilis of Bisignano (1582–1637), was a Franciscan friar born in Bisignano.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-bisignano': '../Article_Images/Bisignano.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
