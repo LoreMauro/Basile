@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-vaglio">
+            <h1>Vaglio</h1>
+            <h2>Introduction (Egeria)</h2>
+            <p>Vaglio Basilicata is a town and comune in the province of Potenza, in the Southern Italian region of Basilicata. It is bounded by the comuni of Albano di Lucania, Brindisi Montagna, Cancellara, Pietragalla, Potenza, Tolve and Tricarico.
+
+                It is home to the Museo delle Antiche Genti di Lucania (Museum of the Ancient People of Lucania), which houses the Lucan portrait of Leonardo da Vinci, an alleged portrait of Leonardo da Vinci discovered in 2008. Also in the municipal territory is Archaeological Park "Serra di Vaglio", with remains of a Lucan town (including several princely tombs) from the 5th-3rd centuries BC. At Rossano di Vaglio are the remains of the federal sanctuary of the Lucani (used from the 5th century BC onwards) and dedicated to the goddess Mefitis. Reconstructions of the settlement and the sanctuary are in the Museo delle Antiche Genti, while most of the material excavated are in the Museo archeologico nazionale della Basilicata at Potenza.</p>
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-vaglio': '../Article_Images/Vaglio.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

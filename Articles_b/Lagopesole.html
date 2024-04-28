@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-lagopesole">
+            <h1>Lagopesole</h1>
+            <h2>Second Day, Petrosinella</h2>
+            <p>Castel Lagopesole, or simply Lagopesole, is a village and civil parish (frazione) of the municipality (comune) of Avigliano, in Basilicata, southern Italy. It has a population of 652.
+                The name derives from the presence of the lake near the town of the same name (Lacus Pensilis), dried up at the beginning of the twentieth century.
+
+Lagopesole, between the eighth and tenth centuries, played a military role for the control of the ancient Via Herculea, linking Melfi and Potenza.
+At the top of Lagopesole is located a castle, attributed to Frederick II that was probably built between 1242 and 1250. A distinguishing feature of this castle from all the others attributed to Frederick II is the presence within it of a real church (not a simple chapel) in an austere Romanesque style.
+
+Pope Innocent II and Abbot Rinaldo of Montecassino met there, in the presence of Emperor Lothair II of Saxony during the war against Roger the Norman. In 1268 and 1294, Charles I of Anjou stayed at the castle. In 1416, both this fortress and the Melfi castle were acquired by the Caracciolo family. In 1531, Emperor Charles V donated it to the Doria family.[1]
+
+In the nineteenth century, the castle was the refuge of bandits, led by Carmine "Donatelli" Crocco, who during April 7, 1861, occupied it with another 400 brigands.</p>
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-lagopesole': '../Article_Images/Lagopesole.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

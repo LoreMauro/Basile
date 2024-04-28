@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-acerenza">
+            <h1>Acerenza (Vallepelosa)</h1>
+            <h2>Introduction</h2>
+            <h2>Fifth Day, The Tale of Tales, Conclusion</h2>
+            <p>The town, then known as Aceruntia, Acheruntia or Acherontia, was conquered by the Romans in 318 BC. Later, it was taken by the Ostrogoths (it was mentioned as an important fortress during the Gothic Wars) and then the Lombards, who fortified the town. In 788 Charlemagne ordered that its walls be destroyed. In 1041, after a period in which it was fought over by the Principality of Salerno and the Byzantine Empire, it was conquered again by the Norman Robert Guiscard.
+
+                The town has been the see of an archbishop since at least 499, when a Justus is known. According to legend, the town's first bishop was appointed by St. Peter.
+                
+                From the 16th century, Acerenza was held under the feudal lordship of the Marquess of Galatone, that family being granted the title Duke of Acerenza on 12 April 1593 by Philip II of Spain. Through marriage the duchy of Acerenza was inherited by the family of the Prince Belmonte, in whose line the title has descended to the present day.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-acerenza': '../Article_Images/Acerenza.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

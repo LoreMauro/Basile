@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-potenza">
+            <h1>Potenza</h1>
+            <h2>Introduction</h2>
+            <p>Potenza (/pəˈtɛnzə/, also US: /poʊˈtɛntsɑː/,[4][5] Italian: [poˈtɛntsa] ⓘ; Neapolitan: Putenza, Potentino dialect: Putenz) is a comune in the Southern Italian region of Basilicata (former Lucania).
+
+                Capital of the Province of Potenza and the Basilicata region, the city is the highest regional capital and one of the highest provincial capitals in Italy, overlooking the valley of the Basento river in the Apennine Mountains of Lucania, east of Salerno. Its territory is bounded by the comuni of Anzi, Avigliano, Brindisi Montagna, Picerno, Pietragalla, Pignola, Ruoti, Tito and Vaglio Basilicata.</p>
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-potenza': '../Article_Images/Potenza.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
