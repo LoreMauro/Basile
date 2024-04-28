@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Trebuchet MS', 'Lucida Unicode', 'Lucida Grande,'
+        'Lucida Sans', Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+    line-height: 88px;
+    background-color: #F5DAD2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+}
+
+/* Style the hero section */
+.hero {
+    background: #FCFFE0;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 0fr;
+    height: 25vh;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex; /* Use flexbox for easier alignment */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.column-left p {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 20%;
+    height: 20%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.slideshow-container {
+    max-width: 800px; 
+    height: 300px; 
+    margin: 0px auto 0; 
+    position: relative; 
+    overflow: hidden; 
+    background: rgba(255, 255, 255, 0.5); 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    border-radius: 10px; /* Adjust the value as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+}
+
+
+  .slideshow-section {
+    background-color: rgba(255, 255, 255, 0.0); /* Adjust the alpha value (0.7 in this example) to control the opacity */
+    /* Other background properties */
+    background-image: url('Images/The+cloister+of+Santa+Chiara+in+Naples,+richly+decorated+with+majolica+tiles,+Italy.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    padding: 50px 0; /* Add padding to the top and bottom of the section (adjust as needed) */
+}
+
+  .mySlides img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0; /* Adjust the left position to ensure it's aligned properly */
+}
+
+.sidebar {
+    background: #FCFFE0;
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align the text */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Increase font size for heading */
+    margin-bottom: 20px; /* Add spacing below heading */
+}
+
+.sidebar p {
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+    line-height: 1.5; /* Increase line height for better readability */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Change text color if needed */
+}
+
+.map-container {
+    position: fixed;
+    width: 100%;
+    height: 130%; /* Adjust height as needed */
+    overflow: auto;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.map img {
+    max-width: 100%; /* Scale images to fit within the map container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pin {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: maroon;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pin-2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: maroon;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.label {
+    position: absolute;
+    top:  -6px; /* Adjust as needed to position the label */
+    left: 15px; /* Adjust as needed to position the label */
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 11.5px; /* Adjust font size as needed */
+}
+
+.label-2 {
+    position: absolute;
+    top:  -6px; /* Adjust as needed to position the label */
+    left: 10px; /* Adjust as needed to position the label */
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+    padding: 3x;
+    border-radius: 4px;
+    font-size: 9.5px; /* Adjust font size as needed */
+}
+
+.label-3 {
+    position: absolute;
+    top:  -6px; /* Adjust as needed to position the label */
+    left: 10px; /* Adjust as needed to position the label */
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+    padding: 3x;
+    border-radius: 4px;
+    font-size: 9.5px; /* Adjust font size as needed */
+    white-space: nowrap
+}
+
+.label-4 {
+    position: absolute;
+    top:  -6px; /* Adjust as needed to position the label */
+    left: 10px; /* Adjust as needed to position the label */
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 11.5px; /* Adjust font size as needed */
+    white-space: nowrap
+}
+
+.label-5 {
+        position: absolute;
+        top:  -6px; /* Adjust as needed to position the label */
+        left: 10px; /* Adjust as needed to position the label */
+        background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+        padding: 3px;
+        border-radius: 8px;
+        font-size: 11.5px; /* Adjust font size as needed */
+    }
+    
+    .label-6 {
+        position: absolute;
+        top:  -6px; /* Adjust as needed to position the label */
+        left: 10px; /* Adjust as needed to position the label */
+        background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+        padding: 3px;
+        border-radius: 8px;
+        font-size: 11.5px; /* Adjust font size as needed */
+        white-space: nowrap
+    }
+    
+.alt {
+    position: fixed;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dot-container {
+    position: absolute;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: red; /* Example dot color */
+    border-radius: 50%;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.zoom-to-kingdom {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the map content */
+    background-image: url('Images/Royal_Coat_of_Arms_of_Spain_(1580-1668).svg.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    width: 3.7%; /* Set the width of the button as a percentage */
+    height: auto; /* Let the height adjust automatically based on the width */
+    padding-top: calc(3.7% / (0.6329));
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.0); /* Set background color with opacity */
+    border-radius: 10px; /* Adjust the value to round the edges */
+    cursor: pointer;
+}
+.zoom-to-principato {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the map content */
+    background-image: url('Images/1024px-Coat_of_Arms_of_Principato_Citra.svg.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    width: 3%; /* Set the width of the button as a percentage */
+    height: auto; /* Let the height adjust automatically based on the width */
+    padding-top: calc(3% / (0.6977));
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.0); /* Set background color with opacity */
+    border-radius: 10px; /* Adjust the value to round the edges */
+    cursor: pointer;
+}
+
+.zoom-to-Basilicata {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the map content */
+    background-image: url('Images/Coat_of_Arms_of_Basilicata.svg.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    width: 3%; /* Set the width of the button as a percentage */
+    height: auto; /* Let the height adjust automatically based on the width */
+    padding-top: calc(3% / (0.6977));
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.0); /* Set background color with opacity */
+    border-radius: 10px; /* Adjust the value to round the edges */
+    cursor: pointer;
+}
+
+.zoom-to-Terra {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the map content */
+    background-image: url('Images/Coat_of_Arms_of_Terra_di_Lavoro.svg.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    width: 3%; /* Set the width of the button as a percentage */
+    height: auto; /* Let the height adjust automatically based on the width */
+    padding-top: calc(3% / (0.697));
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.0); /* Set background color with opacity */
+    border-radius: 10px; /* Adjust the value to round the edges */
+    cursor: pointer;
+}
+
+.zoom-to-Naples {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the map content */
+    background-image: url('Images/Napoli-Stemma_\(without_ornaments\).svg.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    width: 2%; /* Set the width of the button as a percentage */
+    height: auto; /* Let the height adjust automatically based on the width */
+    padding-top: calc(2% / (0.6529));
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.0); /* Set background color with opacity */
+    border-radius: 10px; /* Adjust the value to round the edges */
+    cursor: pointer;
+}
+.label:hover,
+.label-2:hover,
+.label-3:hover,
+.label-4:hover,
+.label-5:hover,
+.label-6:hover {
+    color: white; /* Change text color to white */
+    background-color: black; /* Change background color to black */
+    transform: scale(1.1); /* Scale the label by 10% on hover */
+}
+
+/* Styles for zoom buttons with images */
+.zoom-to-kingdom:hover,
+.zoom-to-Basilicata:hover,
+.zoom-to-Naples:hover,
+.zoom-to-principato:hover,
+.zoom-to-Terra:hover
+{
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5DAD2;
+}
+
+article {
+    background-color:  rgba(255, 255, 255, 0.7);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+article p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #F5DAD2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.homepage-body {
+    font-family: 'Trebuchet MS', 'Lucida Unicode', 'Lucida Grande,'
+        'Lucida Sans', Arial, sans-serif;
+    background-color: #F5DAD2;
+    margin: 0; /* Ensure no default margin */
+}
+
+#article-preview {
+    position: fixed;
+    top: 20px; /* Position 20px from the top */
+    left: 20px; /* Position 20px from the left */
+    width: auto; /* Allow the width to adjust based on content */
+    max-width: 300px; /* Limit the maximum width */
+    max-height: 300px; /* Adjust maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure the preview is above other elements */
+    display: none; /* Initially hidden */
+    transform: scale(0.5); /* Scale the preview to 50% */
+    transform-origin: top left; /* Set the origin of the scaling */
+    box-sizing: border-box; /* Ensure padding and border are included in the dimensions */
+}
+
+article-image {
+    max-width: none;
+    max-height: none;
+    width: auto;
+    height: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container covers the full viewport height */
+    padding: 20px; /* Add padding to create space around the content */
+    box-sizing: border-box; /* Ensure padding is included in the dimensions */
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+    background-image: var(--bg-image); /* Use a CSS variable to set the background image */
+}
+
+.article {
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 100%; /* Ensure the article takes full width within the container */
+}
