@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-castellammare">
+            <h1>Castellammare di Stabia</h1>
+            <h2>Fourth Day, The Seven Pigeons</h2>
+            <p>Castellammare di Stabia (Italian: [kaˌstɛllamˈmaːre di ˈstaːbja]) is a comune in the Metropolitan City of Naples, Campania region, in southern Italy. It is situated on the Bay of Naples about 30 km (19 mi) southeast of Naples, on the route to Sorrento.Castellammare di Stabia lies next to the ancient Roman city of Stabiae, which was destroyed by the eruption of Mount Vesuvius in AD 79. The castle, of the city it takes its name from, was erected around the 9th century on a hill commanding the southern side of the Gulf of Naples. It was restored during the reign of Frederick II of Hohenstaufen and enlarged by King Charles I of Anjou.
+
+                The comune, previously called Castellamare, assumed the name Castellammare on 22 January 1863, and the current name on 31 May 1912.
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-castellammare': '../Article_Images/Castellammare.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-sarno">
+            <h1>Sarno</h1>
+            <h2>First Day, The Flayed Hag</h2>
+            <h2>Third Day, The cockroach, the mouse and the cricket</h2>
+            <p>The Sarno, known as Sarnus to the Romans, is a stream that passes through Pompeii to the south of the Italian city of Naples.[3] It is considered the most polluted river in Europe.[4] It flows about 24 kilometres (15 mi) from the base of Mt. Sarno to the Bay of Naples collecting water from the Solofrana and Cavaiola tributaries during the course of its flow.
+
+                It is still partially used for irrigation, as well as the transportation of goods and fishing. It is part of the Sarno river basin, which covers about 715 square kilometres (276 sq mi).[2][5]
+                
+                The Sarno is one the most polluted rivers in Europe, due to agricultural waste and insufficiently treated industrial waste water.[6][2]
+                
+                There are about 500 small industrial units in the area which still emit pollution. Water treatment plants have been installed, however, they do not work to full capacity. The mouth of the river continues to make bathing in the sea impossible, despite numerous protests.
+                
+                The plain at the mouth of the river was the site of the Battle of the Sarno, fought in 1460.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-sarno': '../Article_Images/Sarno.jpeg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

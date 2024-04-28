@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-gioi">
+            <h1>Gioi</h1>
+            <h2>First Day, Vardiello</h2>
+            <h2>Third Day, The Beauty with no Hands</h2>
+            <p>Gioi is a town and comune in the province of Salerno in the Campania region of south-western Italy. As of 2011, its population was 1,339.[2]
+                The comune of Gioi has a history that dates back well over 1000 years. The first permanent inhabitants may have been monks who settled there around the 11th century. The village was fortified in the 15th century, and parts of the fortifications still exist. The population peaked at about 18,000 in the mid 16th century[citation needed] before being decimated by a plague in 1556. A second plague occurred in 1645, after which the prosperity of the village went into long-term decline.[3]
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-gioi': '../Article_Images/Gioi.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

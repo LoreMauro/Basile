@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-sorrento">
+            <h1>Massa Lubrense</h1>
+            <h2>Fourth Day, The Two Brothers</h2>
+            <h2>Fourth Day, The Seven Pigeons</h2>
+            <p>Sorrento (/səˈrɛntoʊ/, Italian: [sorˈrɛnto], Neapolitan: [sorˈrɛntə]; Latin: Surrentum) is a town overlooking the Bay of Naples in Southern Italy. A popular tourist destination, Sorrento is located on the Sorrentine Peninsula at the south-eastern terminus of the Circumvesuviana rail line, within easy access from Naples and Pompei. The town is widely known for its small ceramics, lacework and marquetry (woodwork) shops.[3]
+
+                The Sorrentine Peninsula has views of Naples, Vesuvius and the Isle of Capri. The Amalfi Drive, connecting Sorrento and Amalfi, is a narrow road along the high cliffs above the Tyrrhenian Sea.
+                
+                Ferries and hydrofoils connect the town to Naples, Amalfi, Positano, Capri and Ischia.
+                
+                Limoncello, a digestif made from lemon rinds, alcohol, water and sugar, is produced in Sorrento along with citrus fruit, wine, nuts and olives.[4]                
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-sorrento': '../Article_Images/Sorrento.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

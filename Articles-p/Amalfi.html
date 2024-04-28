@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-amalfi">
+            <h1>Amalfi</h1>
+            <h2>Fourth Day, The Seven Pigeons</h2>
+            <p>Amalfi (UK: /əˈmælfi/,[3][4] US: /ɑːˈmɑːlfi/,[5] Italian: [aˈmalfi]) is a town and comune in the province of Salerno, in the region of Campania, Italy, on the Gulf of Salerno. It lies at the mouth of a deep ravine, at the foot of Monte Cerreto (1,315 metres, 4,314 feet), surrounded by dramatic cliffs and coastal scenery.[6][7] The town of Amalfi was the capital of the maritime republic known as the Duchy of Amalfi, an important trading power in the Mediterranean between 839 and around 1200.[8][page needed]
+
+                The town became a popular seaside resort beginning in the Edwardian era, with members of the British upper class spending their winters in Amalfi.[9] Amalfi is the main town of the coast on which it is located, named Costiera Amalfitana (Amalfi Coast), and is today an important tourist destination together with other towns on the same coast, such as Positano, Ravello and others.[citation needed] Amalfi is included in the UNESCO World Heritage Sites.[10]
+                
+                A patron saint of Amalfi is Saint Andrew, the Apostle, whose relics are kept at Amalfi Cathedral (Cattedrale di Sant'Andrea/Duomo di Amalfi).[citation needed]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-amalfi': '../Article_Images/Amalfi.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

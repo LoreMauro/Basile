@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-salerno">
+            <h1>Salerno</h1>
+            <h2>Third Day, The cockroach, the mouse and the cricket</h2>
+            <p>Salerno (UK: /sæˈlɛərnoʊ/,[3] US: /səˈ-, sɑːˈ-, səˈlɜːrnoʊ/,[4][5][6] Italian: [saˈlɛrno] ⓘ; Neapolitan: Salierno [saˈljernə]) is an ancient city and comune (municipality) in Campania, southwestern Italy, and is the capital of the namesake province, being the second largest city in the region by number of inhabitants, after Naples.[7] It is located on the Gulf of Salerno on the Tyrrhenian Sea. In recent history the city hosted Victor Emmanuel III, the King of Italy, who moved from Rome in 1943 after Italy negotiated a peace with the Allies in World War II, making Salerno the capital of the "Government of the South" (Regno del Sud) and therefore provisional government seat for six months. Some of the Allied landings during Operation Avalanche (the invasion of Italy) occurred near Salerno.
+
+                Human settlement at Salerno has a rich and vibrant past, dating back to pre-historic times. In the early Middle Ages it was an independent Lombard principality, the Principality of Salerno, which around the 11th century comprised most of Southern Italy. During this time, the Schola Medica Salernitana, the first medical school in the world, was founded. The Normans in 1077 made Salerno the capital of their rule in all continental southern Italy. In the 16th century, under the Sanseverino family, among the most powerful feudal lords in southern Italy, the city became a great centre of learning, culture and the arts, and the family hired several of the greatest intellectuals of the time.[8] Later, in 1694, the city was struck by several catastrophic earthquakes and plagues.[8] During a period of Spanish rule the city suffered a crisis which would last until the 18th century, but under Napoleon Salerno became part of the Parthenopean Republic.[8] In the 19th century Salerno supported ideas of the Risorgimento and welcomed Garibaldi in 1861.
+                
+                The city is divided into three distinct zones: the medieval sector, the 19th century sector and the more densely populated post-war area, with its several apartment blocks.[8] A patron saint of Salerno is Saint Matthew, the Apostle, whose relics are kept here at the crypt of Salerno Cathedral.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-salerno': '../Article_Images/Salerno.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

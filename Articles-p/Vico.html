@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-vico">
+            <h1>Vico Equense</h1>
+            <h2>Fourth Day, The Seven Pigeons</h2>
+            <p>Vico Equense is a coastal town and comune in the Metropolitan City of Naples, in southern Italy.
+                A 7th century pre-Roman necropolis has been found in the area. Later, when it was called Aequana (in Latin),[3] Roman patricians chose it for their villas. After a long decline, the centre started to flourish again in the late 13th century, when it became independent from the Duchy of Sorrento and King Charles II of Naples repeatedly sojourned in the town, where he also built a castle (1301). The cathedral, the only example of a Gothic Cathedral in the Sorrentine Peninsula, also dates to this period.
+
+Vico Equense was the birthplace of the playwright and dabbler in natural magic Giambattista Della Porta (1535-1615).
+
+The great Russian dancer, Violetta Elvin, born Prokhorova, lived with her family in Vico Equense, where she took refuge in 1956 after abandoning a successful career in all theatres of the world. Her career will be reconstructed in the biographical novel by Raffaele Lauro entitled "Dance The Love – A Star in Vico Equense",[4][5][6] to be published by GoldenGate Edizioni in 2016.
+
+Bruce Springsteen's maternal grandfather, Antonio Zerilli, was from Vico Equense. He dedicated the song "My Hometown" to the place.
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-vico': '../Article_Images/Vico.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
