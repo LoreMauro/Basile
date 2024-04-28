@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-spain">
+            <h1>Spain</h1>
+            <h2>Second Day, Viola</h2>
+            <h2>Fourth Day, The Three Animal Kings</h2>
+            <h2>Fifth Day, The Months</h2>
+            <h2>Fourth Day, Ninnillo and Nennella</h2>
+            <p>Spain,[f] or the Kingdom of Spain,[g][h] is a country located in Southwestern Europe, with parts of its territory in the Atlantic Ocean, the Mediterranean Sea and Africa.[11][i] It is the largest country in Southern Europe and the fourth-most populous European Union member state. Spanning across the majority of the Iberian Peninsula, its territory also includes the Canary Islands in the Atlantic Ocean, the Balearic Islands in the Mediterranean Sea, and the autonomous cities of Ceuta and Melilla in Africa. Peninsular Spain is bordered to the north by France, Andorra, and the Bay of Biscay; to the east and south by the Mediterranean Sea and Gibraltar; and to the west by Portugal and the Atlantic Ocean. Spain's capital and largest city is Madrid, and other major urban areas include Barcelona, Valencia, Zaragoza, Seville, Málaga, Murcia, Palma de Mallorca, Las Palmas de Gran Canaria, and Bilbao.
+
+                In early antiquity, the Iberian Peninsula was inhabited by Celtic and Iberian tribes, along with other local pre-Roman peoples. With the Roman conquest of the Iberian Peninsula, the province of Hispania was established. Following the Romanization and Christianization of Hispania, the fall of the Western Roman Empire ushered in the inward migration of tribes from Central Europe, including the Visigoths, who formed the Visigothic Kingdom centred on Toledo. In the early eighth century, most of the peninsula was conquered by the Umayyad Caliphate, and during early Islamic rule, Al-Andalus became a dominant peninsular power centred in Córdoba. Several Christian kingdoms emerged in Northern Iberia, chief among them Asturias, León, Castile, Aragon, Navarre, and Portugal; made an intermittent southward military expansion and repopulation, known as the Reconquista, repelling Islamic rule in Iberia, which culminated with the Christian seizure of the Nasrid Kingdom of Granada in 1492. The dynastic union of the Crown of Castile and the Crown of Aragon in 1479 under the Catholic Monarchs is often considered the de facto unification of Spain as a nation-state.
+                
+                During the Age of Discovery, Spain pioneered the exploration of the New World and the first circumnavigation of the globe.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-spain': '../Article_Images/Spain.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-venice">
+            <h1>Venice</h1>
+            <h2>Second Day, The She-Bear</h2>
+            <h2>Third Day, The Beauty without Hands</h2>
+            <h2>Third Day, The cockroach, the mouse and the cricket</h2>
+            <h2>Third Day, The Ignorant</h2>
+            <h2>Third Day, The Three Fairies</h2>
+            <h2>Fourth Day, The Crow</h2>
+            <p>Venice[3] (Italian: Venezia, Italian: [veˈnɛttsja] ⓘ)[note 1] is a city in northeastern Italy and the capital of the Veneto region. It is built on a group of 126 islands that are separated by expanses of open water and by canals; portions of the city are linked by 472 bridges.[4] The islands are in the shallow Venetian Lagoon, an enclosed bay lying between the mouths of the Po and the Piave rivers (more exactly between the Brenta and the Sile). In 2020, around 258,685 people resided in greater Venice or the Comune di Venezia, of whom around 51,000 live in the historical island city of Venice (centro storico) and the rest on the mainland (terraferma). Together with the cities of Padua and Treviso, Venice is included in the Padua-Treviso-Venice Metropolitan Area (PATREVE), which is considered a statistical metropolitan area, with a total population of 2.6 million.[5]
+
+                The name is derived from the ancient Veneti people who inhabited the region by the 10th century BC.[6][7] The city was historically the capital of the Republic of Venice for almost a millennium, from 810 to 1797. It was a major financial and maritime power during the Middle Ages and Renaissance, and a staging area for the Crusades and the Battle of Lepanto, as well as an important centre of commerce—especially silk, grain, and spice, and of art from the 13th century to the end of the 17th. The city-state of Venice is considered to have been the first real international financial centre, emerging in the 9th century and reaching its greatest prominence in the 14th century.[8] This made Venice a wealthy city throughout most of its history.[9] For centuries Venice possessed numerous territories along the Adriatic Sea and within the Italian peninsula, leaving a significant impact on the architecture and culture that can still be seen today.[10][11] The Venetian Arsenal is considered by several historians to be the first factory in history, and was the base of Venice's naval power.[12] The sovereignty of Venice came to an end in 1797, at the hands of Napoleon. Subsequently, in 1866, the city became part of the Kingdom of Italy.[13]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-venice': '../Article_Images/Venice.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

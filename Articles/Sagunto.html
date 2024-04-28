@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-sagunto">
+            <h1>Sagunto</h1>
+            <h2>Fourth Day, The Seven Pigeons</h2>
+            <p>Sagunto[a] (Valencian: Sagunt)[b][2] is a municipality of Spain, located in the province of Valencia, Valencian Community. It belongs to the modern fertile comarca of Camp de Morvedre. It is located approximately 30 km (19 mi) north of the city of Valencia, close to the Costa del Azahar on the Mediterranean Sea.
+
+                It is best known for the remains of the ancient Iberian and Roman city of Saguntum. The siege of Saguntum in 219 BC was the trigger of the Second Punic War between the Carthaginians and the Romans.
+                
+                The municipality includes three differentiated urban nuclei: Ciutat Vella (Sagunto), Grau Vell [es] and Puerto de Sagunto.[3] Over half of the population lives in the coastal settlement of Puerto de Sagunto.[3]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-sagunto': '../Article_Images/Sagunto.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

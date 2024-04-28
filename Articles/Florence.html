@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-florence">
+            <h1>Florence</h1>
+            <h2>Second Day, Il Compare (Arno)</h2>
+            <h2>Fourth Day, Intermezzo</h2>
+            <p>Florence (/ˈflɒrəns/ FLORR-ənss; Italian: Firenze [fiˈrɛntse] ⓘ)[a] is the capital city of the Italian region of Tuscany. It is also the most populated city in Tuscany, with 360,930 inhabitants in 2023, and 984,991 in its metropolitan area.[4]
+
+                Florence was a centre of medieval European trade and finance and one of the wealthiest cities of that era.[5] It is considered by many academics[6] to have been the birthplace of the Renaissance, becoming a major artistic, cultural, commercial, political, economic and financial center.[7] During this time, Florence rose to a position of enormous influence in Italy, Europe, and beyond.[8] Its turbulent political history includes periods of rule by the powerful Medici family and numerous religious and republican revolutions.[9] From 1865 to 1871 the city served as the capital of the Kingdom of Italy. The Florentine dialect forms the base of standard Italian and it became the language of culture throughout Italy[10] due to the prestige of the masterpieces by Dante Alighieri, Petrarch, Giovanni Boccaccio, Niccolò Machiavelli and Francesco Guicciardini.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-florence': '../Article_Images/Florence.webp',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-cyprus">
+            <h1>Cyprus</h1>
+            <h2>Fifth Day, Shining Polish</h2>
+            <p>Cyprus[f] (/ˈsaɪprəs/ ⓘ), officially the Republic of Cyprus,[g] is an island country in the eastern Mediterranean Sea, north of the Sinai Peninsula, south of the Anatolian Peninsula, and west of the Levant. It is geographically a part of West Asia, but its cultural ties and geopolitics are overwhelmingly Southeast European. Cyprus is the third-largest and third-most populous island in the Mediterranean.[11][12] It is east of Greece, north of Egypt, south of Turkey, and west of Lebanon and Syria. Its capital and largest city is Nicosia. The northeast portion of the island is de facto governed by the self-declared Turkish Republic of Northern Cyprus.
+
+                Cyprus has seen a succession of rulers, namely Assyrians, Egyptians, Persians, Romans, Arabs, Crusaders and Turks who ruled the Island as part of the Ottoman Empire, from 1571 until 1878. Cyprus is home to some of the oldest water wells in the world.[13] Cyprus was settled by Mycenaean Greeks in two waves in the 2nd millennium BC. As a strategic location in the Eastern Mediterranean, it was subsequently occupied by several major powers, including the empires of the Assyrians, Egyptians and Persians, from whom the island was seized in 333 BC by Alexander the Great. Subsequent rule by Ptolemaic Egypt, the Classical and Eastern Roman Empire, Arab caliphates for a short period, the French Lusignan dynasty and the Venetians was followed by over three centuries of Ottoman rule between 1571 and 1878 (de jure until 1914).[14]
+                
+                Cyprus was placed under the United Kingdom's administration based on the Cyprus Convention in 1878 and was formally annexed by the UK in 1914. The future of the island became a matter of disagreement between the two prominent ethnic communities, Greek Cypriots, who made up 77% of the population in 1960, and Turkish Cypriots, who made up 18% of the population. From the 19th century onwards, the Greek Cypriot population pursued enosis, union with Greece, which became a Greek national policy in the 1950s.[15][16] The Turkish Cypriot population initially advocated the continuation of the British rule, then demanded the annexation of the island to Turkey, and in the 1950s, together with Turkey, established a policy of taksim, the partition of Cyprus and the creation of a Turkish polity in the north.[17]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-cyprus': '../Article_Images/Cyprus.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
