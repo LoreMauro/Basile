@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-paludi">
+            <h1>Vlla Duchesca</h1>
+            <h2>Third Day, The White Face</h2>
+            <h2>Fifth Day, Sapia Liccarda</h2>
+            <p>E' la zona detta delle paludi napoletane1(1bis)2 e della Volla3, cesura del grande disegno sub-urbano della corona4, in asse a quasi tutti i varchi irregolari affluenti da e per le direttrici di penetrazione interna alla città.
+                Nella zona prettamente interessata dallo scorrere delle acque pluviali arricchite da materiale vulcanico sono state rinvenute tutt'oggi specie di piante rare e rarissime.
+                
+                
+                E' stata anticamente una zona impaludata dalle acque, che, senza deflusso naturale né lavoro d’uomo sono discese dalle alture delle colline di Napoli adagiandosi su tutta quella plaga distesa tra la zona dei Ponti Rossi, la Villa e la collina cimiteriale di Poggioreale in intima e tesa relazione con il sistema Somma-Vesuvio ed il Golfo5 .
+                I terreni discretamente impermeabili6 hanno trattenuta molta di quest’acqua senza riversarla nello sbocco predefinito del Sebeto e del fiume Volla, ed oggi in gran parte, quell'antica zona è occupata dalle case popolari del rione Vittorio Emanuele III ed il rione Luzzatti, ed il rione Cesare Battisti a via Stadera, zona Poggioreale, e quasi tutto il Centro Direzionale.
+                
+                Ed infine, la sua morfologia, avvallata verso il centro, declinata con dolcezza verso la direttrice di penetrazione della costa, elevata di pochi metri dal livello della acque del Golfo, specie nelle zone più depresse, ha dato luogo per i tempi di insediamento greco e romano ad una barriera insuperabile da parte degli stranieri dell’entroterra vesuviano, che di solito, da questo lato abitualmente assediavano il centro città.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-paludi': '../Article_Images/Paludi.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

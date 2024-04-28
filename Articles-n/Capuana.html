@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-capuana">
+            <h1>Porta Capuana</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <p>The Porta Capuana is a Renaissance city gate in Naples, Italy, originally passing through the medieval city walls, of which two bastions remain to the sides. The gate also gives its name to the zone, which is one of the ten boroughs of Naples. This zone being part of the Fourth Municipality.
+
+                In spite of the name, the portal is not the ancient gateway to the decumanus maximus, the main east-west road that once led out of Roman Naples to Capua. When the city was extended eastwards in the 15th century as part of the construction of the new Aragonese city walls, the original gate, which had been closer to the castle of the same name, Castel Capuano, was rebuilt and relocated in 1484. Then when the walls were razed, the gate remained free-standing, giving it somewhat the air of a triumphal arch. The carving on the 1484 facings consists of classically inspired trophies, flying Victories and other triumphal imagery. Just inside the gate, is the domed church of Santa Caterina a Formiello.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-capuana': '../Article_Images/Capuana.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

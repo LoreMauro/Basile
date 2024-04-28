@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-incurabili">
+            <h1>Complesso degli Incurabili</h1>
+            <h2>First Day, Vardiello</h2>
+            <h2>Third Day, The Beauty without Hands</h2>
+            <p>TThe Ospedale degli Incurabili (Hospital for the Incurables) or Complesso degli Incurabili is an ancient and prominent hospital complex located on Via Maria Longo in central Naples, Italy. Part of the complex, including the remarkable pharmacy, are now the Museo delle arti sanitarie of Naples.
+                Originally built in Renaissance style, the complex incorporated in the structures of the churches of Santa Maria del Popolo and Santa Maria Succurre Miseris dei Bianchi, as well as the ospedale (hospital) of Santa Maria del Popolo degli Incurabili. In time, it also incorporated the adjacent S. Maria delle Grazie Maggiore a Caponapoli and its cloister, the monastery of Santa Maria della Consolazione, the church of Santa Maria di Gerusalemme and the cloister of the Trentatré. The hospital was founded in 1521 by Maria Lorenza Longo after she became paralyzed by a malady. Among the main donors of the next century was the merchant Gaspar Roomer. In the 19th century, donors included Professor Cotugno and Signore Marchetti of Messina.[1]
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-incurabili': '../Article_Images/Incurabili.webp',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

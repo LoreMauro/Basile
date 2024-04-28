@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-pendino">
+            <h1>Pendino</h1>
+            <h2>Third Day, The White Face</h2>
+            <h2>Fifth Day, Sapia Liccarda</h2>
+            <p>Pendino is one of the 30 quartieri of Naples, southern Italy.[1]
+
+                It covers an area of 0.63 km2 and in 2009 had a population of 15,588 inhabitants.[2]
+                
+                The neighbourhood is part of the historical city centre (Centro historico), including the Palazzo Como, that houses the Filangieri Civic Museum, on the main north–south street in the area, Via Duomo (the street on which Naples Cathedral is located). The area was one of the most heavily affected by the risanamento, the massive demolitions of the urban renewal of Naples on either side of the year 1900, including the dismantling and repositioning of the aforementioned museum and the very construction of the street, Via Duomo, itself, to provide a main traffic artery to connect the northern side of Naples with the port area.[3] The Vico, and Vicoletto, dei Zuroli, also called Vicolo dei Zurli (Vicolo de' Zurli)[4] are located near via Forcella (Furcella in Neapolitan) in the historic center of the city, they are located near via Forcella (Furcella in Neapolitan) and near the church of Pio Monte della Misericordia, between Via dei Tribunali and Via Vicaria Vecchia, in the district. The noble Zurolo family then found their home there between the 14th and 15th centuries, later having their noble palace built in pure Gothic style, which still exists today.[5]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-pendino': '../Article_Images/Pendino.jpeg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

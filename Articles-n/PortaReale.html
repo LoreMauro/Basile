@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-portareale">
+            <h1>Porta Reale</h1>
+            <h2>Third Day, Belluccia</h2>
+            <p>La presenza di una porta occidentale di epoca classica sul decumano inferiore è testimoniata anche grazie agli studi e agli scavi archeologici che, sin dai lavori compiuti nel XVII secolo dall'architetto Francesco Antonio Picchiatti, hanno portato alla luce i resti dell'antica Porta Cumana che sorgeva nell'area occupata dall'odierna piazza San Domenico Maggiore.
+
+                Tale porta di ingresso in città fu poi, con l'ampliamento delle mura, spostata lungo l'asse di via San Biagio dei Librai sino alla basilica di Santa Chiara, grazie a un rifacimento portato a termine nel 1268 (secondo la storiografia più risalente da Carlo II d'Angiò, anche se si nota un evidente contrasto cronologico). Riguardo alla posizione di questa porta si è discusso per molto tempo: si era pensato che la porta fosse posta all'altezza della odierna Guglia dell'Immacolata, ma si è arrivati a ritenere che sorgesse tra l'attuale via Cisterna dell'Olio e il palazzo delle Congregazioni, come individuato da rilievi in loco effettuati da Giulio De Petra insieme a Fausto Nicolini.
+        
+                La nuova porta, che fu abbellita da sculture, fu chiamata Porta Reale e recava sul fornice l'iscrizione "EGREGIE NIDI SUM REGIA PORTA PLATEE / MENIA NOBILITANS HIC URBIS PARTHENOPEE" che ancor oggi campeggia su un edificio della via Toledo di fronte al Palazzo De Rosa.
+                
+                Nel 1528 la porta Reale fu demolita, per essere sostituita da una nuova porta che fu posta a termine dell'asse viario di via Toledo, aperto nel 1536 dal viceré don Pedro di Toledo. Essa costituiva il nuovo ingresso da nord e dall'area collinare alla città e si apriva nell'ampliamento della cinta muraria promosso dal viceré verso ovest.
+                
+                Le si attesta in un primo momento (secondo il volere ufficiale del viceré, suo fondatore) la denominazione di porta Reale, come per l'antico accesso duecentesco che aveva sostituito, talvolta con la specificazione nuova per distinguerla dalla vecchia; successivamente all'apertura della basilica dello Spirito Santo fu chiamata comunemente Porta dello Spirito Santo, mutuando il nome dall'importante edificio di culto che peraltro diede il nome alla zona in cui sorgeva (la parte nord di via Toledo appunto).
+                
+                Inoltre in seguito all'apertura negli immediati paraggi delle quattro cisterne per la conservazione dell'olio, progettate da Giovanni Vincenzo Della Monica su deliberazione degli Eletti di Città del 1588, la porta era indicata raramente come porta dell'Olio. Anche la denominazione porta Toledo, con evidente richiamo al viceré che aveva aperto porta e strada, è raramente attestata.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-portareale': '../Article_Images/PortaReale.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

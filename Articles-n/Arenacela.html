@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-arenacela">
+            <h1>Arenacela</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <p>L'Arenacela. È una contrada nella parte orientale della città, allora non fabbricata, come è stata ai nostri giorni, e che,
+                nel cinque e seicento, formava il campo dei sassaiuoli napoletani («preteianti», come li chiama il CORTESE, Micco Passaro,
+                II, 12), i quali si sfidavano per rioni o quartieri, intervenendo
+                talvolta a tali battaglie fino a duemila combattenti. «Mi si diceva dai vecchi (scrive il CELANO, Notizie cit., V, 461) che ve
+                n’erano cosi bravi nel tirare di fionda che, dove segnavano
+                con l’occhio, ivi colpivano». Il viceré duca d’Alba fece prendere nel 1625 da trenta «capi sassaiuoli» e li mandò alle galere. L’usanza, se anche in modo meno vivace, è durata fino ai
+                giorni nostri: si vedano notizie in un articolo di N. LAZZARO,
+                La pretrìata, in Gazzetta letteraria di Torino, IV (1880), n.
+                28, e nel giornale napoletano La lega del bene, IV (1889), n.
+                3.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-arenacela': '../Article_Images/Arenacela.webp',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

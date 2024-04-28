@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-larga">
+            <h1>Piazza Larga (Borgo Orefici)</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>Third Day, Belluccia</h2>
+            <p>Il Borgo Orefici è costituito da strade molto strette e caratterizzate da costruzioni irregolari. L’unico slargo del quartiere è rappresentato da Piazza Orefici. In questa piazzetta, fin dai tempi della regina Giovanna I, si radunavano gli orafi che qui avevano collocato le proprie botteghe artigiane. Nel mezzo della piazza sedeva “l’udienza”, una specie di consiglio dove i quattro Consoli della Corporazione degli Orefici sorvegliavano il lavoro. Il simbolo della piazzetta è Il Cristo di Piazza Orefici. Il crocifisso è dipinto in maniera tale che lo spettatore possa trovarsi di fronte alla sacra effige da entrambe i lati della croce. Un altro piazzale da annoverare tra i monumenti caratteristici del Borgo ? rappresentato da Piazza Carlo Troya, che ospita l’antica Fontana del Pesce.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-larga': '../Article_Images/Larga.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

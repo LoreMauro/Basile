@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-mandracchio">
+            <h1>Mandracchio</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>Second Day, Gagliuso</h2>
+            <p>A mandracchio is a small sheltered harbour reserved for the mooring of small boats and fishing vessels.[1]
+
+                Many mandracchios are found in Italy, including at Ancona, Genoa, La Spezia and Muggia. Naples and Trieste also had mandracchios, but they no longer exist. Mandracchios were also found elsewhere in the Mediterranean, including in Slovenia, Greece and Malta.
+                
+                The cities of Naples, Livorno and San Benedetto del Tronto still have districts called Mandracchio. In Greece, the harbour of Rhodes and the towns of Mandràki Nisyrou in Nisyros and Mandràki Serròn in Serres include mandràki (Greek: μανδράκι), the Greek word for mandracchio, in their names. An area in Valletta, Malta is also known as the Manderaggio (Maltese: Il-Mandraġġ).[2]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-mandracchio': '../Article_Images/Mandracchio.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

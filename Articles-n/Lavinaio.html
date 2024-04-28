@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-lavinaio">
+            <h1>Lavinaio</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>First Day, The Flayed Hag</h2>
+            <p> Lavinaio si rifà, invece, al termine “lava”, che anticamente indicava un poderoso effluvio di acqua e fango che molto spesso interessava la zona in questione. La stessa, infatti, è abbarbicata a metà tra la collina antistante e il mare, dove sfociavano proprio questi torrenti pluviali.
+                Quando poi nel 1484 l’intera area venne annessa alle mura aragonesi, le acque furono  deviate all’Arenaccia, per fare posto nel limite meridionale al castello del Carmine, quarta fortezza cittadina, commissionato da Carlo III di Durazzo (1386) e demolito (sopravvivono tracce di mura e due torri) nel 1906.
+
+                Lavinaio, dunque, indica lo scorrere abbondante dell’acqua. Solo dopo l’eruzione effusiva del 1737 con “lava” si cominciò ad indicare anche lo scorrere tumultuoso di roccia fusa e gas fuoriuscito dal Vesuvio.
+                
+                Secondo alcune fonti, inoltre, ‘o Lavenaro sarebbe stato il punto di partenza della diffusione della peste, che colpì tragicamente Napoli nel  1656. La malattia sarebbe stata portata nella città campane da alcuni topi giunti alle falde del Vesuvio a bordo di nave provenienti dalla Sardegna ed il primo ad esserne infettato sarebbe stato proprio un giovane di vico Lavinaio, il quale lavorava proprio alla dogana del porto di Napoli. Lo stesso, rincasato nella sua abitazione, sarebbe morto nel giro di ventiquattro ore, infettando anche la madre.
+                
+                Proprio quest’ultima fu l’autrice (probabilmente involontaria) di un gesto che aiutò certamente la diffusione della peste: prima di passare anch’ella a miglior vita, infatti, per pagare il fitto di casa impegnò alcuni beni, tra cui il letto del figlio appestato.
+                
+                </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-lavinaio': '../Article_Images/Lavinaio.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

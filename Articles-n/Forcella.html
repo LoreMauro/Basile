@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-forcella">
+            <h1>Gelsi (Spanish Quarters)</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>Third Day, Belluccia</h2>
+            <p>Forcella (Furcella in napoletano) è una zona di Napoli del centro storico, situata tra i quartieri Pendino e San Lorenzo a ridosso di via Duomo e tra Spaccanapoli e il corso Umberto I. Il nome del quartiere deriva dal suo caratteristico bivio ad ipsilon (Y) che ricorda le fattezze di una forcella.
+
+                Forcella è lo scenario del primo episodio di Ieri, oggi, domani di Vittorio De Sica, in cui Adelina (Sophia Loren), per evitare la prigione per spaccio di sigarette di contrabbando, continua a farsi mettere incinta dal marito (Marcello Mastroianni). Il film si ispirò ad un fatto realmente accaduto che fu oggetto di un'interrogazione parlamentare.
+                
+                A Forcella sono anche situati il teatro Trianon, di fronte al quale si trova anche l'antichissimo Cippo a Forcella, pietre un tempo facenti parte della porta muraria di Neapolis, da cui l'espressione napoletana: «‘Sta cosa s’arrecorda ‘o Cippo a Furcella», per dire che è una cosa molto vecchia.
+                
+                Tra gli anni '70 e '90 questa zona ha giocato un ruolo decisivo nelle logiche di camorra della città, quando Luigi Giuliano era il boss del clan Giuliano di Forcella. In seguito ha contribuito a lanciare un urlo alla non-camorra il prete napoletano don Luigi Merola della vicina chiesa di San Giorgio Maggiore. Con gran coraggio e diplomazia, dando dimostrazione alla delinquenza locale, alla cittadinanza e, soprattutto, ai giovani che si deve combattere per un proprio ideale e che non ci si deve mai arrendere anche di fronte a situazioni difficili.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-forcella': '../Article_Images/Forcella.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

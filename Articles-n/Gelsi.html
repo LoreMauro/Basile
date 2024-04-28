@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-gelsi">
+            <h1>Gelsi (Spanish Quarters)</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>Fifth Day, Sapia Liccarda</h2>
+            <p>regione detta dei «Gelsi» o delle «Ceuze», perché
+                fino ai primi del cinquecento era tutta piantata di gelsi e vi si
+                allevavano i bachi da seta. Vi si andava a diporto, a bere e a
+                far baldoria. Nella seconda metà di quel secolo vi si cominciò
+                a edificare case e vi si acquartierarono i soldati spagnuoli; onde un gran tratto di quella regione si chiama ancora «i quartieri». Vedi CELANO, Notizie cit., IV, 635 sgg. Sotto l’ottobre
+                1616, si legge in una cronaca: «Sabato Sua Eccellenza (il viceré duca di Ossuna) andò curiosamente in seggia scorrendo
+                tutte le strade del quartiere sopra la strada di Toledo, volgarmente dette le Celse; e si dice per rinserrarlo, com’è solito per
+                le altre città, che vogliono vivere onoratamente...» (ZAZZERA,
+                in Arch. stor. ital., serie I, voi. IX, p. 487). Nella seconda egloga delle Muse napolitane, uno degli interlocutori dichiara
+                al compagno: «Io vengo da le Ceuze , da pigliareme spasso».</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-gelsi': '../Article_Images/Gelsi.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

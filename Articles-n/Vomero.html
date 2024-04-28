@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-vomero">
+            <h1>Vomero</h1>
+            <h2>Third Day, The cockroach, the mouse and the cricket</h2>
+            <p>omero (pronounced [ˈvɔːmero]) is a bustling hilltop district of metropolitan Naples, Italy — comprising approximately two square kilometres (0.77 sq mi) and a population of 48,000.
+
+                Vomero is noted for its central square, Piazza Vanvitelli; the ancient Petraio, its earliest path up and down to the original city of Naples; its ancient district of Rione Antignano; Floridiana Park and Villa Floridiana; the medieval fortress, Castel Sant'Elmo; three funiculars connecting to downtown historic districts; its active pedestrian zone, aka ZTL — and its prominent location overlooking greater Naples, Mount Vesuvius, the Bay of Naples and the Tyrrhenian Sea.
+                
+                Adjacent to the Arenella, Soccavo, Fuorigrotta, Chiaia, Montecalvario and Avvocata districts, the street and placenames within Vomero are typically named after noted artists, painters, sculptors, musicians, composers or architects, each with a prominent Neopolitan connection at the time of Vomero's development.
+                
+                Residents go by the demonym, Vomeresi.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-vomero': '../Article_Images/Vomero.jpeg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

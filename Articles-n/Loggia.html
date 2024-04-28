@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-loggia">
+            <h1>Loggia di Genova</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <p> Nel 1615 fu poi Antonio Serra, scrittore di uno dei primi trattati di economia al mondo, che spiegò quanto furono importanti i genovesi per Napoli, criticando l’incapacità dei napoletani di diventare bravi imprenditori: “i napoletani vogliono solo lavorare d’intelletto: diventano magistrati, avvocati o medici, altrimenti muoiono di povertà. Non hanno spirito imprenditoriale e tutte le industrie napolitane sono gestite da fiorentini, pisani, bergamaschi e genovesi. Le banche che producono, invece, sono tutte di proprietà di famiglie genoane”
+                I genovesi erano infatti espertissimi banchieri e commercianti, temuti anche dagli arabi per la loro astuzia e bravura: Napoli ed il Sud Italia, con i bellissimi campi di grano della Campania, erano il luogo perfetto per stabilire le proprie attività commerciali. Per non parlare delle attività bancarie: quasi tutte le opere pubbliche realizzate a Napoli dai viceré spagnoli, compresa Via Toledo, furono finanziate con i soldi dei banchieri genovesi, che furono il motore dell’economia napoletana fino all’arrivo dei Borbone.
+                Passararono solo cent’anni e gli stessi genovesi che arrivarono a Napoli per fondare le loro attività economiche diventarono migliaia, tutti insediati nei dintorni di Via Medina e presso l’antica Loggia dei Genovesi, creata dalla Regina Giovanna nel porto. Le famiglie di origine genovese divennero così ricche ed influenti da stabilirsi definitivamente a Napoli, tanto da essere considerate del tutto famiglie napoletane: nel 1600 molti cognomi liguri iniziarono ad apparire fra le più alte cariche politiche nel vicereame di Napoli e di lì i genovesi napoletani non si distinsero più dai “veri” antichi partenopei.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-loggia': '../Article_Images/Loggia.jpeg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

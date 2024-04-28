@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-vergini">
+            <h1>Borgo dei Vergini</h1>
+            <h2>First Day, The Goat Face</h2>
+            <p>Il borgo dei Vergini, detto anche borgo barocco per lo stile preponderante nelle sue architetture, è la prima zona che si incontra prima di giungere nella Sanità vera e propria (per chi proviene da via Foria).
+
+                Si tratta di un'animatissima zona della città, un tempo fuori le mura, costituita dalla via dei Vergini, sede di un florido mercato all'aperto.
+                
+                I Vergini rappresentano il primo tratto del lungo vallone che scorre tra le alture della Stella, dei Miracoli, di Capodimonte e di Materdei.
+                
+                Il nome deriva da una fratria religiosa greca, quella degli eunostidi, dedita alla temperanza e, soprattutto, alla castità.
+                
+                Sulla strada affacciano alcune delle più importanti architetture barocche della città, come il palazzo dello Spagnolo e vari edifici religiosi: la chiesa di Santa Maria dei Vergini, la chiesa della Missione ai Vergini e la chiesa di Santa Maria Succurre Miseris ai Vergini. Nelle estreme vicinanze la chiesa di Sant'Aspreno ai Crociferi nella parte detta delle Crocelle (così veniva appellata la zona dove erano presenti i frati di San Camillo de Lellis) e la chiesa di Santa Maria della Misericordia ai Vergini detta popolarmente la Misericordiella.
+                
+                La strada al termine si biforca in due vie: a sinistra via Arena della Sanità e a destra via dei Cristallini, che portano alle omonime zone.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-vergini': '../Article_Images/Vergini.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

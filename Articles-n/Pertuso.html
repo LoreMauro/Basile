@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-pertuso">
+            <h1>Pertuso</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <p>LNel 1597 durante il viceregno del conte di Olivares Enrique de Guzmán fu praticata abusivamente (analogamente a quanto avvenne per Port'Alba) un'apertura (in napoletano pertuso) nella murazione in modo tale da agevolare il passaggio di coloro che provenivano dalla zona collinare, i quali per entrare in città dovevano giungere fino alla porta dello Spirito Santo.
+
+                Nel 1640 durante il regno di Filippo IV, Cosimo Fanzago, incaricato dal viceré duca di Medina, provvide a realizzare la porta, ai cui lavori collaborò anche Bartolomeo Picchiatti, regolarizzando il pertuso aperto. Per tale motivo la porta, che fu dedicata al viceré, continuò ad essere appellata dal popolo porta Pertuso.
+                
+                La porta mostrava il suo prospetto principale sulla piazza di Montesanto e subì numerosi danni durante i fatti d'armi del 1799, quando lo stemma reale, che si trovava al di sopra dell'epigrafe dedicatoria e degli stemmi vicereali e della città, fu seriamente danneggiato assieme a tutte le strutture in marmo della porta.
+                
+                </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-pertuso': '../Article_Images/Pertuso.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

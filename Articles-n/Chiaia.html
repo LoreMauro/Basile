@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-chiaia">
+            <h1>Chiaia</h1>
+            <h2>First Day, The Merchant's Two Sons</h2>
+            <h2>Second Day, Gagliuso</h2>
+            <h2>Third Day, The Three Fairies</h2>         
+            <p>Chiaia (Italian pronunciation: [ˈkjaːja], Neapolitan pronunciation: [ˈkjɑːjə]) is an affluent neighbourhood on the seafront in Naples, Italy, bounded by Piazza Vittoria on the east and Mergellina on the west. Chiaia is one of the wealthiest districts in Naples, and many luxury brands have shops on its main street. It is also home to a business school and a medical school, as well as other public schools.
+
+                A prominent landmark in Chiaia is the large public park known as the Villa Comunale. It was initially developed in the late 16th and early 17th centuries as the Spanish rulers of Naples opened the city to the west of its historical boundaries.
+                
+                The Renaissance poet Laura Terracina was born and raised in Chiaia.[1]</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-chiaia': '../Article_Images/Chiaia.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

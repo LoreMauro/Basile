@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-duchesca">
+            <h1>Villa Duchesca</h1>
+            <h2>Third Day, The White Face</h2>
+            <h2>Fifth Day, Sapia Liccarda</h2>
+            <p>Villa La Duchesca fu una villa rinascimentale di Napoli che si ergeva nelle immediate vicinanze di Castel Capuano in una zona di Napoli che ancora conserva il nome "Duchesca".
+                L'edificio, realizzato sul finire del XV secolo, fu progettato da Giuliano da Maiano, per Alfonso II, allora ancora Duca di Calabria, e fu celebre soprattutto per lo splendore dei suoi giardini. La villa si trovava nell'area di Castel Capuano, con cui era in collegamento grazie a viali interni ai giardini, in parte preesistenti alla villa stessa e strutturati in varie zone, con forme geometriche, fontane e anche con terrazzamenti.
+
+                Il nome "Duchesca" risulta generalmente riferito alla figura dalla duchessa Ippolita Maria Sforza, moglie di Alfonso, morta però prima della realizzazione del corpo di fabbrica principale, edificato da Giuliano da Maiano secondo un modello ligneo portato con sé da Firenze nel 1487.[1] Il giardino pare, comunque, che contenesse vari edifici, anche più antichi, costituendo un complesso con logge e padiglioni destinato a essere una gradevole residenza per la corte, complementare alla residenza ufficiale di Castel Capuano. La villa fu costruita quasi in concomitanza a quella di Poggioreale anch'essa scomparsa. Entrambe furono importanti elementi di riqualificazione urbana per le aree circostanti, con bonifiche, impianti viari, e opere pubbliche.
+                
+                Le decorazioni delle logge della Duchesca furono create da Giacomo Parmense, Luigi della Bella e Calvano di Padova.
+                
+                Nonostante non risulti documentata, la sistemazione dei giardini è attribuita a Pacello da Mercogliano, il maestro giardiniere di Alfonso II e poi di Carlo VIII in Francia.[2]
+                
+                Le vicende storico-politiche della dinastia aragonese causarono il sostanziale abbandono della villa pochi anni dopo la sua realizzazione: ciò ebbe come conseguenza la progressiva edificazione privata che rapidamente inghiottì completamente il vasto giardino. Già nella seconda metà del XVI secolo il complesso era in avanzato stato di degrado[3]. Seppur danneggiata, la struttura edilizia sopravvisse fino alla seconda metà del XVIII secolo, progressivamente spogliata dei suoi materiali da costruzione, e scomparve senza lasciare né traccia materiale né testimonianze iconografiche.                
+            </p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-duchesca': '../Article_Images/Duchesca.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>

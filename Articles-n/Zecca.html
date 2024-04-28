@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Biography</a>
+            <a href="/">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-zecca">
+            <h1>Zecca</h1>
+            <h2>Second Day, The Compare</h2>
+            <p>Una prima forma di conio la si deve ai Ducali. Più precisamente con la nomina di Basilio a Duca della città da parte dell’Imperatore bizantino Costante II, tra il 661 e il 662 d.C. Questa situazione, con le monete Ducali, perdurò fino al 1278 quando re Carlo I istituì la prima, vera Zecca di Napoli a Castel Capuano. Questa verrà poi trasferita, nel 1305, a Capo Mazza. 
+                La Zecca di Napoli raggiungerà la ben più nota sede, presso il palazzo di Nicola di Somma che prenderà il nome di Palazzo Sant’Agostino (in quanto posta di fronte all’omonima chiesa) nel 1333, grazie a Roberto d’Angiò. Grande importanza, in quest’epoca, era data al Maestro di Zecca. Tale era la sua influenza tanto da apporre, sulle monete, sigle che ne hanno potuto testimoniare la fiducia che la corona attribuiva al Maestro. Solo persone di fiducia erano infatti nominate a tale carica. 
+                Per quanto riguarda il palazzo della Zecca, così come è nota ai più la sede della Zecca di Napoli, fu per l’appunto eretto nel XIII secolo. Nei secoli ha ricevuto varie e sostanziali opere di ampliamento. Ad oggi ha conservato, dell’architettura originale, la facciata col suo basamento in cui si apre il portale principale. Il vestibolo, caratterizzato da lacunari, presenta un portale riccamente decorato del XIX secolo.   
+                C’è da sottolineare che, insieme al Palazzo della Zecca, altre officine erano state allestite per il conio delle monete. Una di queste era a Torre Annunziata, mentre un’altra figurava nella fonderia del Regio Arsenale.</p>
+            <!-- Add more content here -->
+        </article>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-zecca': '../Article_Images/Zecca.png',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+</body>
+</html>
