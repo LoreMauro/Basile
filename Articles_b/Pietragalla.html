@@ -11,30 +11,33 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-pietragalla">
             <h1>Pietragalla</h1>
-            <h2>Fourth Day, The Rooster's Stone</h2>
             <p>Pietragalla is a town and comune in the province of Potenza, in the Southern Italian region of Basilicata. It is bordered by the comuni of Acerenza, Avigliano, Cancellara, Forenza, Potenza, Vaglio Basilicata.</p>
+            <h2 class="sottotitolo">The Rooster's Stone (Fourth Day, Zeza)</h2>
+            <p>
+                Perhaps the most intriguing and mysterious fable concerns the village of Pietragalla, near Acerenza. The first fable of the Fourth Day of the Cunto de Li Cunti, is called precisely “the Stone of the Rooster,” and it is not so far-fetched to say that the fable constitutes the map for a truly intriguing quest, since one of the symbols of the Grail is precisely a stone, and of course the title leaves no doubt about the explicit reference to the locality. There is also no lack of a connection to the Borgo Pietrapertosa, where the presence of the Templars is established.
             </p>
-            <!-- Add more content here -->
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -50,5 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+    <footer>
+        <p>
+            Created by Lorenzo Mauro
+        </p>
+    </footer>
 </body>
 </html>

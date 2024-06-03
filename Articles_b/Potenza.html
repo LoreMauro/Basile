@@ -11,32 +11,36 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-potenza">
             <h1>Potenza</h1>
-            <h2>Introduction</h2>
             <p>Potenza (/pəˈtɛnzə/, also US: /poʊˈtɛntsɑː/,[4][5] Italian: [poˈtɛntsa] ⓘ; Neapolitan: Putenza, Potentino dialect: Putenz) is a comune in the Southern Italian region of Basilicata (former Lucania).
-
-                Capital of the Province of Potenza and the Basilicata region, the city is the highest regional capital and one of the highest provincial capitals in Italy, overlooking the valley of the Basento river in the Apennine Mountains of Lucania, east of Salerno. Its territory is bounded by the comuni of Anzi, Avigliano, Brindisi Montagna, Picerno, Pietragalla, Pignola, Ruoti, Tito and Vaglio Basilicata.</p>
+                Capital of the Province of Potenza and the Basilicata region, the city is the highest regional capital and one of the highest provincial capitals in Italy, overlooking the valley of the Basento river 
+                in the Apennine Mountains of Lucania, east of Salerno. Its territory is bounded by the comuni of Anzi, Avigliano, Brindisi Montagna, Picerno, Pietragalla, Pignola, Ruoti, Tito and Vaglio Basilicata.</p>
             </p>
-            <!-- Add more content here -->
+            <h2 class="sottotitolo">Introduction</h2>
+            <p>
+                Potenza is cited with a reference to <em>Cieco di Potenza</em>, a famous (at the time of Basile) singer and musician of humble origins, that is constantly cross-referenced in works from this period, both by Basile and Giulio Cesare Cortese.
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -52,5 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
 </body>
 </html>

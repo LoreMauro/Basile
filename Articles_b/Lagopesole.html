@@ -11,38 +11,39 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-lagopesole">
             <h1>Lagopesole</h1>
-            <h2>Second Day, Petrosinella</h2>
-            <p>Castel Lagopesole, or simply Lagopesole, is a village and civil parish (frazione) of the municipality (comune) of Avigliano, in Basilicata, southern Italy. It has a population of 652.
-                The name derives from the presence of the lake near the town of the same name (Lacus Pensilis), dried up at the beginning of the twentieth century.
-
-Lagopesole, between the eighth and tenth centuries, played a military role for the control of the ancient Via Herculea, linking Melfi and Potenza.
-At the top of Lagopesole is located a castle, attributed to Frederick II that was probably built between 1242 and 1250. A distinguishing feature of this castle from all the others attributed to Frederick II is the presence within it of a real church (not a simple chapel) in an austere Romanesque style.
-
-Pope Innocent II and Abbot Rinaldo of Montecassino met there, in the presence of Emperor Lothair II of Saxony during the war against Roger the Norman. In 1268 and 1294, Charles I of Anjou stayed at the castle. In 1416, both this fortress and the Melfi castle were acquired by the Caracciolo family. In 1531, Emperor Charles V donated it to the Doria family.[1]
-
-In the nineteenth century, the castle was the refuge of bandits, led by Carmine "Donatelli" Crocco, who during April 7, 1861, occupied it with another 400 brigands.</p>
+            <p>
+                Castel Lagopesole, or simply Lagopesole, is a village and civil parish (frazione) of the municipality (comune) of Avigliano, in Basilicata, southern Italy. It has a population of 652.
+                The name derives from the presence of the lake near the town of the same name (Lacus Pensilis), dried up at the beginning of the twentieth century. Lagopesole, between the eighth and tenth centuries, played a military role for the control of the ancient Via Herculea, linking Melfi and Potenza.
+                At the top of Lagopesole is located a castle, attributed to Frederick II that was probably built between 1242 and 1250. A distinguishing feature of this castle from all the others attributed to Frederick II is the presence within it of a real church (not a simple chapel) in an austere Romanesque style.
+                Pope Innocent II and Abbot Rinaldo of Montecassino met there, in the presence of Emperor Lothair II of Saxony during the war against Roger the Norman. In 1268 and 1294, Charles I of Anjou stayed at the castle. In 1416, both this fortress and the Melfi castle were acquired by the Caracciolo family. In 1531, Emperor Charles V donated it to the Doria family.[1]
+                In the nineteenth century, the castle was the refuge of bandits, led by Carmine "Donatelli" Crocco, who during April 7, 1861, occupied it with another 400 brigands.</p>
+            <h2 class="sottotitolo">Petrosinella (Second Day, Zeza)</h2>
+            <p>
+                It is not clear if Lagopesole can really be identified with the location of the tower where Petrosinella (Basile's version of Rapunzel) is set. It seems clear thought that the origins of the story come from southern Italy, and it was then spread throught Italy with the Norman conquest. The scholarly debate is still opened on this topic,
+                but folkloristically the people from this town have claimed for centuries the partenity of this tale.
             </p>
-            <!-- Add more content here -->
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -58,5 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
 </body>
 </html>

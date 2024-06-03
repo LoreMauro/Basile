@@ -11,29 +11,37 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-dolcedorme">
             <h1>Serra Dolcedorme</h1>
-            <h2>Fifth Day, Sole, Luna and Talia</h2>
-            <p>The Pollino (Italian: Massiccio del Pollino) is a massif in the southern Apennines, on the border between Basilicata and Calabria, southern Italy, being the highest point of both regions. It became part of the Pollino National Park in 1992. The main peaks include Monte Pollino (2,248 m) and the massif's high point, Serra Dolcedorme (2,267 m), which overlooks the plain of Sibari.</p>
-            <!-- Add more content here -->
+            <p>
+                The Pollino (Italian: Massiccio del Pollino) is a massif in the southern Apennines, on the border between Basilicata and Calabria, southern Italy, being the highest point of both regions. 
+                It became part of the Pollino National Park in 1992. The main peaks include Monte Pollino (2,248 m) and the massif's high point, Serra Dolcedorme (2,267 m), which overlooks the plain of Sibari.
+            </p>
+            <h2 class="sottotitolo">Sole, Luna and Talia (Fifth Day, Ciulla)</h2>
+            <p>
+                Dolcedorme is the name of an area around the Monte Pollino. It is probable that Basile took inspiration from the folklore surrounding the area; it is said, in fact, that a princess lays dormient int he area, waiting to be revived by somebody.
+                It's probable, given that Basile lived both in Basilicata and Calabria, that the lore around this area inspired him.
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -49,5 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+
+<footer>
+    <p>Created by Lorenzo Mauro</p>
+</footer>
 </body>
 </html>

@@ -11,32 +11,36 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-vaglio">
             <h1>Vaglio</h1>
-            <h2>Introduction (Egeria)</h2>
             <p>Vaglio Basilicata is a town and comune in the province of Potenza, in the Southern Italian region of Basilicata. It is bounded by the comuni of Albano di Lucania, Brindisi Montagna, Cancellara, Pietragalla, Potenza, Tolve and Tricarico.
-
                 It is home to the Museo delle Antiche Genti di Lucania (Museum of the Ancient People of Lucania), which houses the Lucan portrait of Leonardo da Vinci, an alleged portrait of Leonardo da Vinci discovered in 2008. Also in the municipal territory is Archaeological Park "Serra di Vaglio", with remains of a Lucan town (including several princely tombs) from the 5th-3rd centuries BC. At Rossano di Vaglio are the remains of the federal sanctuary of the Lucani (used from the 5th century BC onwards) and dedicated to the goddess Mefitis. Reconstructions of the settlement and the sanctuary are in the Museo delle Antiche Genti, while most of the material excavated are in the Museo archeologico nazionale della Basilicata at Potenza.</p>
             </p>
-            <!-- Add more content here -->
+            <h2 class="sottotitolo">Introduction (Egeria)</h2>
+            <p>
+                Vaglio di Lucania, the ancient Balium, a Celtic name derived from Bala (“Stronghold”) or Bella utilia (from the Celtic god Belenos, another name of Lug hence the name of the entire region: Lucania). This place may have inspired one of the fairy tales captured in Matteo Garrone's film “The Flayed Old Woman.”
+                The term “Bala” also means the lake of the nymphs from which the river that connected with the beyond departed. And it is here that Basile probably places the fountain of eternal youth and wealth, identified with the magical waters of the Goddess Mefitis in the area known as Braida di Vaglio, with the legend of the nymph Egeria transformed into a fountain by her weeping for King Numa, whose original stele (Nummelos king of the Lucanians) is still placed inside the local Civic Museum of the Ancient Peoples of Lucania.”
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -52,5 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
 </body>
 </html>
