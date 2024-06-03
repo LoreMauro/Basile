@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-barberia">
+            <h1>Barberia</h1>
+            <p>
+                The Barbary Coast (also Barbary, Berbery or Berber Coast, latin: Barberia) was the name given to the coastal regions of central and western North Africa or more specifically 
+                the Maghreb and the Ottoman borderlands consisting of the regencies in Algiers, Tunis, and Tripoli, as well as the Sultanate of Morocco from the 16th to 19th centuries.
+                The term originates from the exonym of the Berbers.
+            </p>
+            <h2 class="sottotitolo">Cannetella (Third Day, Zeza)</h2>
+            <p>
+                In this fable the <em>Barberia</em> region is referred to as the metaphorical place of origin of the Gran Turco, an euphemism for a cruel and vicious individual. In this period,
+                piracy was rampant in the Mediterranean, and both Christian and Muslim pirates would frequently kidnap and sell into slavery (both insitutionalized and not) their victims. This is 
+                no the first nor the last reference in the book to "turks" (meaning muslims) and their exotic cruelness.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-barberia': '../Article_Images/Barberia.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+        <footer>
+            <p>Created by Lorenzo Mauro</p>
+        </footer>
+</body>
+</html>

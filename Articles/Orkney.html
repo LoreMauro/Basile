@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-orkneys">
+            <h1>Orkney Islands</h1>
+            <p>
+                Orkney (/ˈɔːrkni/; Scots: Orkney; Old Norse: Orkneyjar; Norn: Orknøjar), also known as the Orkney Islands (archaically "The Orkneys"), is an archipelago in the Northern Isles of Scotland, situated off the north coast of the island of Great Britain. 
+                Orkney is 10 miles (16 km) north of the coast of Caithness and has about 70 islands, of which 20 are inhabited. The largest island, the Mainland, has an area of 523 square kilometres (202 sq mi), making it the sixth-largest Scottish island and 
+                the tenth-largest island in the British Isles. Orkney's largest settlement, and also its administrative centre, is Kirkwall.
+            </p>
+            <h2 class="sottotitolo">Corvetto (Third Day, Ciulla)</h2>
+            <p>
+                The Orkney Islands are cited as the "Islands of the Killer Whales", a play on words that makes sense in Italian and Neapolitan but not in English (killerwhale in italian can be translated as <em>orca</em>, and the Orkneys as <em>Orcadi</em>). Here the main character finally reaches the end 
+                of his journey in search for a bride.
+            </p>
+        </article>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const articleContainer = document.getElementById('article-container');
+        const articleId = articleContainer.querySelector('article').id;
+    
+        // Define background images for each article
+        const backgroundImages = {
+            'article-orkneys': '../Article_Images/Orkneys.jpg',
+            // Add more articles and their respective background images here
+        };
+    
+        // Set background image based on the current article
+        articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+    });
+        </script>
+    <footer>
+        <p>Created by Lorenzo Mauro</p>
+     </footer>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-cairo">
+            <h1>Cairo</h1>
+            <p>Cairo (/ˈkaɪroʊ/ ⓘ KY-roh; Arabic: القاهرة, romanized: al-Qāhirah) is the capital of Egypt and the city-state Cairo Governorate, and is the country's largest city, home to 10 million people. It is also part of the largest urban agglomeration in Africa, the Arab world and the Middle East: The Greater Cairo metropolitan area is the 12th-largest in the world by population with a population of over 22.1 million.
+                Cairo is associated with ancient Egypt, as the Giza pyramid complex and the ancient cities of Memphis and Heliopolis are located in its geographical area. Located near the Nile Delta, the city first developed as Fustat following the Muslim conquest of Egypt in 641 next to an existing ancient Roman fortress, Babylon. Cairo was founded by the Fatimid dynasty in 969. It later superseded Fustat as the main urban centre during the Ayyubid and Mamluk periods (12th–16th centuries).
+                Cairo has long been a centre of the region's political and cultural life, and is titled "the city of a thousand minarets" for its preponderance of Islamic architecture. Cairo's historic center was awarded World Heritage Site status in 1979.[11] Cairo is considered a World City with a "Beta +" classification according to GaWC.
+                Cairo has the oldest and largest film and music industry in the Arab world, as well as Egypt's oldest institution of higher learning, Al-Azhar University. Many international media, businesses, and organizations have regional headquarters in the city; the Arab League has had its headquarters in Cairo for most of its existence.
+            </p>
+            <!-- Add more content here -->
+            <h2 class="sottotitolo">The Ignorant (Third Day, Paola)</h2>
+            <p>
+                In this story, Moscione (the son of a merchant) is sent by is father to Cairo to trade (in reality, his father wants to free himself from the burden of his stupid child). Cairo
+                is described as a lively but dangerous city, ful of merchants from every part of the world, with a bussling culture and full of interesting characters.
+            </p>
+            <h2 class="sottitolo">The Crow (Fourth Day, Ciommetella)</h2>
+            <p>
+                Cairo is described similarly as the previous fable, but in this city the plot really picks up. Cairo is a beautiful city, full of beautiful women and exotic objects, but also full of
+                people who are ready to stab the main character in the back, ready to scam and lie to hime. Cairo, in both tales, is an obstacle to grow out of.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-cairo': '../Article_Images/Cairo.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+        <footer>
+            <p>Created by Lorenzo Mauro</p>
+        </footer>
+</body>
+</html>

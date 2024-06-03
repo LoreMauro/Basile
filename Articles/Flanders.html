@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-flanders">
+            <h1>Flanders</h1>
+            <p>The area of today's Flanders has figured prominently in European history since the Middle Ages. The original County of Flanders stretched around AD 900 from the Strait of Dover to 
+                the Scheldt estuary and expanded from there. This county also still corresponds roughly with the modern-day Belgian provinces of West Flanders and East Flanders, along with neighbouring parts of France and the Netherlands. In this period, 
+                cities such as Ghent and Bruges of the historic County of Flanders, and later Antwerp of the Duchy of Brabant made it one of the richest and most urbanised parts of Europe, trading, and weaving the wool of neighbouring lands into cloth for 
+                both domestic use and export. As a consequence, a very sophisticated culture developed, with impressive achievements in the arts and architecture, rivaling those of northern Italy.
+                Belgium was one of the centres of the 19th-century Industrial Revolution, but this occurred mainly in French-speaking Wallonia. In the second half of the 20th century, and due to massive national 
+                investments in port infrastructure, Flanders' economy modernised rapidly, and today Flanders and Brussels are much wealthier than Wallonia, being among the wealthiest regions in Europe and the world.[8] 
+                In accordance with late 20th century Belgian state reforms, Flanders was made into two political entities: the Flemish Region (Dutch: Vlaams Gewest) and the Flemish Community (Dutch: Vlaamse Gemeenschap).
+                These entities were merged, although geographically the Flemish Community, which has a broader cultural mandate, covers Brussels, whereas the Flemish Region does not.</p>
+            <h2 class="sottotitolo">Peruonto (First Day, Meneca)</h2>
+            <p>
+                In this fable, Flanders are cited as the place of origin of rich textiles. In the XVII century in fact the area of modern day northern Belgium and southern Netherlands was reknowned for the fastness and quality of its products,
+                mainly when it comes to the creation of rich and lush fibers and decorations.
+            </p>
+            <h2 class="sottotitolo">The Dove (Second Day, Ciulla)</h2>
+            <p>
+                In this tale, Flanders are the place of origin of a noblewoman who is set to marry the main character, Nardo Aniello, who previously swore his love to another woman, Filadoro. For many reasons Nardo loses his memory, and because of this is he is set out to
+                marry this woman; after some troubles and tribulations, he finds is memory back and decides to not marry the woman anymore, who, in turn, is very happy that the marriage didn't go through.
+            </p>
+            <h2 class="sottotitolo">The Three Animal Kings (Fourth Day, Meneca)</h2>
+            <p>
+                Tittone, son of the King of Verdecolle, sets out in search of his three step-sisters married to a falcon, a stag, and a dolphin, and after long journeys, he finds them. In hi search he visits many places, among them Flanders, a famous place for the Italians of 
+                Basile's period.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-flanders': '../Article_Images/Flanders.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+            <footer>
+                <p>Created by Lorenzo Mauro</p>
+            </footer>
+</body>
+</html>

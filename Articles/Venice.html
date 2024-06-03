@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-venice">
+            <h1>Venice</h1>
+            <p>
+                Venice (Italian: Venezia, Italian: [veˈnɛttsja] ⓘ) is a city in northeastern Italy and the capital of the Veneto region. It is built on a group of 126 islands that are separated by expanses of open water and by canals; portions of the city are linked by 472 bridges. The islands are in the shallow Venetian Lagoon, an enclosed bay 
+                lying between the mouths of the Po and the Piave rivers (more exactly between the Brenta and the Sile). The name is derived from the ancient Veneti people who inhabited the region by the 10th century BC. The city was historically the capital of the Republic of Venice for almost a millennium, from 810 to 1797. It was a major financial and maritime power during the Middle Ages and Renaissance, and a staging area for the Crusades and 
+                the Battle of Lepanto, as well as an important centre of commerce—especially silk, grain, and spice, and of art from the 13th century to the end of the 17th. The city-state of Venice is considered to have been the first real international financial centre, emerging in the 9th century and reaching its greatest prominence in the 14th century.
+                This made Venice a wealthy city throughout most of its history.
+            </p>
+            <h2 class="sottotitolo">The She-Bear (Second Day, Antonella)</h2>
+            <p>
+                In this tale, one of the prince's pretenders comes from Venice, and she is described as a whiteish ugly woman. This passage uses stereotypes on a variety of different nationalities to hammer home the fact that the prince only wants the other main character, who disappeared because she turned into a she-bear.
+            </p>
+            <h2 class="sottotitolo">Third Day, The Beauty without Hands</h2>
+            <p>
+                In this tale we find a reference to venetian wax. Because of the peculiar location of the city, the wax working resulted in a famously pure wax, sourced in the Levant, Moldova and Valacchia. The production of candles and torches, in fact, was one of the main industries of the whole Venetian Republic, something that Basile (who lived in Venice for a period)
+                probably knew very well.
+            </p>
+            <h2 class="sottotitolo">The cockroach, the mouse and the cricket (Third Day, Popa)</h2>
+            <p>
+                In this passage, we find a reference to the famous silk work of Venice. Basile here references <em>tabì</em>, a type of strong and heavy silk famous for its quality and resistance.
+            </p>
+            <h2 class="sottotitolo">The Ignorant (Third Day, Paola)</h2>
+            <p>
+                In this tale, the main character departs from Venice to reach Cairo. Venice was famously one of the European ports that had the best contacts with the Levant.
+            </p>
+            <h2 class="sottotitolo">The Three Fairies (Third Day, Iacova)</h2>
+            <h2 class="sottotitolo">The Crow (Fourth Day, Ciommetella)</h2>
+            <p>
+                In both these tales, Basile references (through a Venetian mirror) the worldwide famous venetian glass production.
+            </p>
+        </article>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-venice': '../Article_Images/Venice.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+    </div>
+<footer>
+    <p>
+        Created by Lorenzo Mauro
+    </p>
+</footer>
+</body>
+</html>

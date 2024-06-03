@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-genoa">
+            <h1>Genoa</h1>
+            <p>Genoa (/ˈdʒɛnoʊə/ JEN-oh-ə, Italian: Genova, Italian: [ˈdʒɛːnova] ⓘ; Ligurian: Zêna, Ligurian: [ˈzeːna])[a] is a city in and the capital of the Italian region of Liguria, and the sixth-largest city in Italy. In 2023, 558,745 people lived within the city's administrative limits. 
+                While its metropolitan city has 813,626 inhabitants, more than 1.5 million people live in the wider metropolitan area stretching along the Italian Riviera.
+                On the Gulf of Genoa in the Ligurian Sea, Genoa has historically been one of the most important ports on the Mediterranean: it is currently the busiest in Italy and in the Mediterranean Sea and twelfth-busiest in the European Union.
+                Genoa was the capital of one of the most powerful maritime republics for over seven centuries, from the 11th century to 1797. Particularly from the 12th century to the 15th century, the city played a leading role in the commercial trade in Europe, 
+                becoming one of the largest naval powers of the continent and considered among the wealthiest cities in the world. It was also nicknamed la Superba ("the proud one") by Petrarch due to its glories on the seas and impressive landmarks. 
+                The city has hosted massive shipyards and steelworks since the 19th century, and its solid financial sector dates back to the Middle Ages. The Bank of Saint George, founded in 1407, is the oldest known state deposit bank in the world and has played an important role in the city's 
+                prosperity since the middle of the 15th century.</p>
+            <h2 class="sottotitolo">Viola (Second Day, Meneca)</h2>
+            <p>
+                In this fable, Basile makes a reference to the women from genoa, who had the habit to cover their mouths and faces with velvet masks to not ruin their make up and avoid bad smells. This is part of a metaphor involving the rising of the Sun.
+            </p>
+            <h2 class="sottotitolo">The She-Bear (Second Day, Antonella)</h2>
+            <p>
+                In this tale, Genoa is cited in the tale as the place of production of the "Genoa stones", a particular type of stones that were used to sharpen blades.
+            </p>
+            <h2 class="sottotitolo">The Three Ceders (Fifth Day, Ciommetella)</h2>
+            <p>
+                In this tale the main characther, Ciommetiello, after reaching France in search of a woman to marry, takes a genoese <em>liuto</em> to reach the Gibraltar Strait. The <em>liuto</em> was a famous and widespread type of merchant ship, popular for its 
+                easy maneuverability and speed.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-genoa': '../Article_Images/Genoa.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+<footer>
+    <p>Created by Lorenzo Mauro</p>
+</footer>
+</body>
+</html>

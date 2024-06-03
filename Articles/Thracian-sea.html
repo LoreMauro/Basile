@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-thracian">
+            <h1>Thracian Sea</h1>
+            <p>The Thracian Sea (Greek: Θρακικό Πέλαγος, Thrakiko Pelagos; Turkish: Trakya Denizi) is the northernmost part of the Aegean Sea. It is bounded by Macedonia and Thrace as well as northwestern Turkey. It connects to the Black Sea through the Dardanelles Straight, the Marmara Sea, and the Bosphorus Straight.
+                The entire area of the sea lies north of the 40th parallel. Its length from east to west is from 23°E to about 25.8°E, or from the Strymonian Gulf east to the northernmost part of the Gallipoli peninsula and the width from north to south is about 40.25°N to 41°N, or from the Dardanelles north to the boundary 
+                between the Xanthi and the Rhodope regional units.
+                Islands in the Thracian Sea include Thasos and Samothrace in Greece, and Gökçeada (Imvros in Greek) in Turkey. In the south, the sea extends to the north coast of the island of Lemnos. The bays and gulfs include the Ierissian Gulf to the southwest, the Strymonian Gulf where the Strymon River empties, the Kavala 
+                Gulf and the Saros Gulf in Turkey. Rivers emptying into this portion of the gulf include the Nestos and the Evros/Meriç. The famous thermal springs are Loutra Eleftheron in Kavala.
+                The northern part of the Thracian Sea is a habitat for the endangered Black Sea harbor porpoise (Phocoena phocoena relicta).[2]</p>
+                <h2 class="sottotitolo">The cockroach, the mouse and the cricket (Third Day, Popa)</h2>
+                <p>
+                    While Miccone's father is insulting him for his foolishness, he makes a reference to the Thracian Sea as a place full of turk pirates who would be ready to steal him and sell him into slavery, something that the father isn't necessarily opposed to.
+                </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-thracian': '../Article_Images/Thracian-sea.webp',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+<footer>
+    <p>Created by Lorenzo Mauro</p>
+</footer>
+</body>
+</html>

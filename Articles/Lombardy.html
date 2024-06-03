@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-lombardy">
+            <h1>Lombardy</h1>
+            <p>Lombardy (Italian: Lombardia;[c] Lombard: Lombardia) is an administrative region of Italy that covers 23,844 km2 (9,206 sq mi); it is located in northern Italy and has a population of about 10 million people, constituting more than one-sixth of Italy's population. 
+                Lombardy is located between the Alps mountain range and tributaries of the river Po, and includes Milan, its capital, the largest metropolitan area in the country, and among the largest in the EU.
+                Its territory is divided into 1,502 comuni (region with the largest number of comuni in the entire national territory), distributed in twelve administrative subdivisions (eleven provinces plus the Metropolitan City of Milan). The region ranks first in Italy in terms 
+                of population, population density and number of local authorities, while it is fourth in terms of surface area, after Sicily, Piedmont and Sardinia.
+                It is the second most populous region of the European Union (EU),[12] and the second region of the European Union by nominal GDP.[2] Lombardy is the first region of Italy in terms of economic importance, contributing to approximately a fifth of the national gross 
+                domestic product (GDP). Lombardy is a member of the Four Motors for Europe, an international economical organization whose other members are Baden-Württemberg in Germany, Catalonia in Spain, and Auvergne-Rhône-Alpes in France. Milan is the economic capital of Italy and is a global financial centre.</p>
+            <h2 class="sottotitolo">Gagliuso (Second Day, Tolla)</h2>
+            <p>
+                In this tale (one of the first versions of <em>Cat in Boots</em>), the cat helps his owner to achieve great riches and fame. In this section of the tale, the cats convinces the king that Gagliuso owns many estates in various parts of the Italian Peninsula, including Lombardy. It is important to
+                denote that the concept of Lombardy didn't only refer to the modern day region of Lombardy itself, but also to parts of Piedmont and Emilia.
+            </p>
+            <h2 class="sottotitolo">The cockroach, the mouse and the cricket (Third Day, Popa)</h2>
+            <p>
+                Nardiello is a good but foolish young man, who is sent by his father to sell some calves at the market. On the way he meets a fairy, who has a cockroach who plays the guitar, a dancing mouse and a singing cricket. Nardiello decides to exchange his calves for the cockroach, enraging his father. To avoid being beaten by him, he flees for Lombardy,
+                where he manages to heal the king's daughter, Milla. 
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-lombardy': '../Article_Images/Lombardy.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+        <footer>
+            <p>Created by Lorenzo Mauro</p>
+        </footer>
+</body>
+</html>

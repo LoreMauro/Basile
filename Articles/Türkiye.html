@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-türkiye">
+            <h1>Türkiye</h1>
+            <p>Turkey, officially the Republic of Türkiye, is a country mainly in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe. It borders the Black Sea to the north; Georgia, Armenia, Azerbaijan, and Iran to the east; Iraq, Syria, and the Mediterranean Sea (and Cyprus) to the south; and the Aegean Sea, Greece, and Bulgaria to the west. Turkey is home to over 85 million people; most are ethnic Turks, while ethnic Kurds are the largest ethnic minority.
+                Officially a secular state, Turkey has a Muslim-majority population. Ankara is Turkey's capital and second-largest city; Istanbul is its largest city, and its economic and financial center, as well as the largest city in Europe. Other major cities include İzmir, Bursa and Antalya.
+            </p>
+            <h2 class="sottotitolo">The Ogre's Tale (First Day, Zeza)</h2>
+            <p>
+                In this tale, turks are referred to in a saying: "as fat as a turk".
+            </p>
+            <h2 class="sottotitolo">The Goat Face (First Day, Paola)</h2>
+            <p>
+                In this tale, there is a reference to the rampant piracy that the turks (and other Europeans, too) were very apt at doing. 
+            </p>
+            <h2 class="sottotitolo">The She-Bear (Second Day, Antonella)</h2>
+            <p>
+                In this tale the Great Turk is referenced in a metaphor, quoting also the Gran Serraille in Instanbul.
+            </p>
+            <h2 class="sottotitolo">The white visage (Third Day, Meneca)</h2>
+            <p>
+                In this tale, turks are referenced in a metaphor comparing the lips of a beloved to the turkish archs that adorned the buildings in the Ottoman Empire.
+            </p>
+            <h2 class="sottotitolo">Rosella (Third Day, Ciommetella)</h2>
+            <p>
+                The Grand Turk, desiring to bathe in the blood of a lord, sends to capture a prince at sea; the daughter falls in love with the prisoner and flees with him; the mother catches up to them, and the prince's hands are cut off. The Grand Turk dies of a broken heart; but, cursed by the mother, the daughter is forgotten by the prince, and only after various tricks that she employs does she return to her husband's memory, and they remain happily together.
+            </p>
+            <h2 class="sottotitolo">The Three Fairies (Third Day, Iacova)</h2>
+            <p>
+                In this tale, the reference to Turkey lies in the lush carpets still famous all around the world.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-türkiye': '../Article_Images/Türkiye.jpg',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
+</body>
+</html>

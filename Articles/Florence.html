@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" type="text/css" href="../Basile-Style.css"/>
+    <style>
+        .container {
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust the padding to create the desired spacing */
+        }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lo Cunto de Li Cunti</div>
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
+            <a href="../map.html">Map</a> 
+        </div>
+    </nav>
+    <div class="container" id="article-container">
+        <article id="article-florence">
+            <h1>Florence</h1>
+            <p>
+                Florence (/ˈflɒrəns/ FLORR-ənss; Italian: Firenze [fiˈrɛntse] ⓘ)[a] is the capital city of the Italian region of Tuscany. It is also the most populated city in Tuscany, with 360,930 inhabitants in 2023, and 984,991 in its metropolitan area.
+                Florence was a centre of medieval European trade and finance and one of the wealthiest cities of that era. It is considered by many academics to have been the birthplace of the Renaissance, becoming a major artistic, cultural, commercial, 
+                political, economic and financial center. During this time, Florence rose to a position of enormous influence in Italy, Europe, and beyond. Its turbulent political history includes periods of rule by the powerful Medici family and numerous 
+                religious and republican revolutions.[9] From 1865 to 1871 the city served as the capital of the Kingdom of Italy. The Florentine dialect forms the base of standard Italian and it became the language of culture throughout Italy due to the 
+                prestige of the masterpieces by Dante Alighieri, Petrarch, Giovanni Boccaccio, Niccolò Machiavelli and Francesco Guicciardini.
+            </p>
+            <h2 class="sottotitolo">Il Compare (Second Day, Iacova)</h2>
+            <p>
+                <p>
+                    In the fable the river Arno is quoted as an euphemism. Many times, in Basile's style, witty and vulgar characters make a long list of metaphors to drive across a point about something. The river Arno is quoted when the main character, a
+                    poor farmer who has to deal on a daily basis with a relative who is always asking for food, is finally fed up with him and gives him a piece of his mind. The river is quoted in a metaphor where it said that not even all of its waters can 
+                    be successful at cleaning the other character's behind.
+                </p>
+            <h2 class="sottotitolo">Intermezzo (Fourth Day)</h2>
+            <p>
+                Florence is quoted in the intermezzo in reference to the <em>ballo di Fiorenza</em>, a type of uptempo music played in XVII at the great banquets in Florence. This style of music, meant to be danced in choreographed groups, was very popular all throughout
+                Europe, and became almos an euphemism for chamber music meant for pure entertainment. A testimony of this can be found in the <em>Biblioteca Marciana</em> in Venice, reproposed many times by musicians from around the globe. <a href="https://www.youtube.com/watch?v=54h-w1CFqSk">Here an example</a>.
+            </p>
+        </article>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleContainer = document.getElementById('article-container');
+    const articleId = articleContainer.querySelector('article').id;
+
+    // Define background images for each article
+    const backgroundImages = {
+        'article-florence': '../Article_Images/Florence.webp',
+        // Add more articles and their respective background images here
+    };
+
+    // Set background image based on the current article
+    articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
+});
+    </script>
+            <footer>
+                <p>Created by Lorenzo Mauro</p>
+            </footer>
+</body>
+</html>
