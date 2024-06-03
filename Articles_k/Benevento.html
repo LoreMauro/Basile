@@ -11,35 +11,36 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-benevento">
             <h1>Benevento</h1>
-            <h2>First Day, The Flea</h2>
-            <p>Benevento (UK: /ˌbɛnəˈvɛntoʊ/,[4] US: /ˌbeɪneɪˈ-/,[5] Italian: [beneˈvɛnto] ⓘ; Latin: Beneventum) is a city and comune of Campania, Italy, capital of the province of Benevento, 50 kilometres (31 mi) northeast of Naples. It is situated on a hill 130 metres (427 feet) above sea level at the confluence of the Calore Irpino (or Beneventano) and the Sabato. In 2020, Benevento has 58,418 inhabitants. It is also the seat of a Catholic archbishop.
-
-                Benevento occupies the site of the ancient Beneventum, originally Maleventum or even earlier Maloenton. The meaning of the name of the town is evidenced by its former Latin name, translating as good or fair wind. In the imperial period it was supposed to have been founded by Diomedes after the Trojan War.[6]
-                
+            <p>Benevento (UK: /ˌbɛnəˈvɛntoʊ/, US: /ˌbeɪneɪˈ-/, Italian: [beneˈvɛnto] ⓘ; Latin: Beneventum) is a city and comune of Campania, Italy, capital of the province of Benevento, 50 kilometres (31 mi) northeast of Naples. It is situated on a hill 130 metres (427 feet) above sea level at the confluence of the Calore Irpino (or Beneventano) and the Sabato. In 2020, Benevento has 58,418 inhabitants. It is also the seat of a Catholic archbishop.
+                Benevento occupies the site of the ancient Beneventum, originally Maleventum or even earlier Maloenton. The meaning of the name of the town is evidenced by its former Latin name, translating as good or fair wind. In the imperial period it was supposed to have been founded by Diomedes after the Trojan War.
                 Due to its artistic and cultural significance, the Santa Sofia Church in Benevento was declared a UNESCO World Heritage Site in 2011, as part of a group of seven historic buildings inscribed as Longobards in Italy, Places of Power (568–774 A.D.).
-                
                 A patron saint of Benevento is Saint Bartholomew, the Apostle, whose relics are kept there at the Cattedrale di Santa Maria Assunta.</p>
-            <!-- Add more content here -->
+            <h2 class="sottotitolo">The Flea (First Day, Popa)</h2>
+            <p>
+                Basile makes a reference to Benevento here because at his time the town and surrounding territory were under Papal jurisdiction, and for this reason Benevento (a place easily reachable for anybody from the modern region of Campania) became a place where many people seeked refuge from persecution or fleed to to not be judged in Neapolitan courts.
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -55,5 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
 </body>
 </html>

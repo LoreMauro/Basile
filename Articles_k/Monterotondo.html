@@ -11,34 +11,36 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-monterotondo">
             <h1>Monterotondo</h1>
-            <h2>Fifth Day, Shining Polish</h2>
             <p>According to some historians, Monterotondo is the heir of the ancient Sabine town of Eretum, although the modern settlement appeared in the 10th-11th centuries in a different location. The name derives from the medieval corruption (then Mons Teres, then Monte Ritondo) of the original Mons Eretum.
                 In the Middle Ages, due to its location across the Via Salaria, Monterotondo was a strategic point for the defense of Rome. Initially under the Capocci family, it was sold in the 12th century to the Orsini, who held it until the 18th century. In 1432, it was seized by the condottiero Niccolò Fortebraccio, and in 1485, it was set on fire by the Orsini.
-                
                 In 1634, the Barberini acquired the town, restoring or enlarging several edifices, and building the cathedral in 1639. On 28 April 1864, the Rome and Monterotondo Rail Road was opened for service.
-                
                 In 1943, after the Italian armistice with the Allies, 800 German paratroopers tried unsuccessfully to reconquer it.</p>
-            <!-- Add more content here -->
+            <h2 class="sottotitolo">Shining Polish (Fifth Day, Meneca)</h2>
+            <p>
+                The fable is a female version of the myth of Pygmalion. Monterotondo is the name of the kingdom where the main character, Betta, finds herself in after fleeing her home. It isn't clear if this Monterotondo is a reference to real place in Latium or not.
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -54,5 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+    <footer>
+        <p>Created by Lorenzo Mauro</p>
+    </footer>
 </body>
 </html>

@@ -11,29 +11,33 @@
             background-position: center;
             padding: 20px; /* Adjust the padding to create the desired spacing */
         }
+        .sottotitolo {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">Lo Cunto de Li Cunti</div>
         <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Biography</a>
-            <a href="/">The work</a>
+            <a href="../index.html">Home</a>
+            <a href="../biography.html">Biography</a>
+            <a href="../work.html">The work</a>
             <a href="../map.html">Map</a> 
         </div>
     </nav>
     <div class="container" id="article-container">
         <article id="article-altomonte">
             <h1>Altomonte</h1>
-            <h2>First Day, The Flea</h2>
-            <p>AAltomonte is a town and comune in the province of Cosenza, in the Calabria region of southern Italy. It is one of I Borghi più belli d'Italia ("The most beautiful villages of Italy").[3]</p>
-            <!-- Add more content here -->
+            <p>Altomonte is a town and comune in the province of Cosenza, in the Calabria region of southern Italy. It is one of I Borghi più belli d'Italia ("The most beautiful villages of Italy").</p>
+            <h2 class="sottotitolo">The Flea (First Day, Popa)</h2>
+            <p>
+                Altomonte is the location for the fable. It is not clear if the location is called from a specific place or if it's a case of omonimia; it's important to note that Altomonte is near Cosenza, a place where Basile actually lived and worked for a period.
+            </p>
         </article>
     </div>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const articleContainer = document.getElementById('article-container');
@@ -49,5 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     articleContainer.style.backgroundImage = `url(${backgroundImages[articleId]})`;
 });
     </script>
+        <footer>
+            <p>
+                Created by Lorenzo Mauro
+            </p>
+        </footer>
 </body>
 </html>
